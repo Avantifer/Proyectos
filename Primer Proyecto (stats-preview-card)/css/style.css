@@ -1,0 +1,54 @@
+.card__paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white; }
+  .card__paragraph span {
+    color: #aa5bdb; }
+  .card__paragraph p {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.75); }
+  .card__paragraph .color-grey {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75); }
+  .card__paragraph__info .number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #090b1a; }
+
+.card {
+  width: 70%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  background-color: #1b1938;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .card__paragraph {
+    padding: 3rem 4rem; }
+    .card__paragraph p {
+      padding: 2rem 3.5rem 4rem 0; }
+    .card__paragraph__info {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; }
+  .card__img {
+    background-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: linear-gradient(to right bottom, #aa5bdb, #aa5bdb), url(/img/image-header-mobile.jpg); }

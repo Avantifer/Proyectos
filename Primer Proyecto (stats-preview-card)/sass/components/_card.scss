@@ -1,0 +1,33 @@
+.card {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    background-color: $color-dark-desaturated-blue;
+    @include absCenter;
+
+
+    &__paragraph {
+        padding: 3rem 4rem;
+        
+        p{
+            padding: 2rem 3.5rem 4rem 0 ;
+        }
+
+        &__info{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    &__img {
+        background-blend-mode: multiply;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-image: linear-gradient(to right bottom, $color-soft-violet, $color-soft-violet) , url(/img/image-header-mobile.jpg);
+    }
+
+    
+}
