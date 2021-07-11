@@ -1,32 +1,35 @@
-.card__paragraph{
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    color: $color-white;
-
-    span{
-        color: $color-soft-violet;
+.card{
+    &__title{
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        color: $color-white;
+        
+        span {
+            color: $color-soft-violet;
+        }
     }
 
-    p{
-        font-family: sans-serif;
-        font-weight: 100;
-        font-size: $font-size-regular;
-        line-height: 1.5rem;
+    &__paragraph{
         color: $color-white-transparent-paragraph-1;
-    }
-
-    .color-grey{
-        font-family: "Lexend Deca", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: $color-white-transparent-paragraph-1;
+        font-size: 0.9rem;
     }
 
     &__info{
-        .number{
+        font-family: "Lexend Deca";
+
+        &-number{
+            color: white;
             font-weight: 700;
-            font-size: 20px;
-            line-height: 2rem;
+            font-size: 1.2rem;
+        }
+
+        &-word{
+            font-size: 0.9rem;
+            color: $color-white-transparent-paragraph-2;
+            text-transform: uppercase;
+            font-weight: 400;
         }
     }
 }
+
+
