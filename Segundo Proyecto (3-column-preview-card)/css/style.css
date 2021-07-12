@@ -1,3 +1,53 @@
+.card-title {
+  font-family: "Big Shoulders Display", sans-serif !important;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 40px; }
+
+.card-text {
+  font-family: "Lexend Deca", sans-serif !important;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px; }
+
+.card a {
+  font-family: "Lexend Deca", sans-serif !important;
+  font-size: 15px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 7.8% 20%; }
+
+.card-img {
+  width: 5rem !important;
+  height: auto !important;
+  padding-left: 1rem; }
+
+.card-1 {
+  background-color: #e38826 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
+
+.card-2 {
+  background-color: #006870 !important;
+  border-radius: 0 !important; }
+
+.card-3 {
+  background-color: #004241 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
+
+.btn {
+  padding: 0.8rem 2rem !important; }
+  .btn-1 {
+    color: #e38826 !important; }
+  .btn-2 {
+    color: #006870 !important; }
+  .btn-3 {
+    color: #004241 !important; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

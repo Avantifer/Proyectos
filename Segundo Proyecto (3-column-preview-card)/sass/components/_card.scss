@@ -1,0 +1,41 @@
+.card{
+    &-img{
+        width: 5rem !important;
+        height: auto !important;
+        padding-left: 1rem;
+    }
+
+    &-1{
+        background-color: $color-bright-orange !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    &-2{
+        background-color: $color-dark-cyan !important;
+        border-radius: 0 !important;
+    }
+
+    &-3{
+        background-color: $color-very-dark-cyan !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+}
+
+
+.btn{
+    padding: 0.8rem 2rem !important;
+
+    &-1{
+        color: $color-bright-orange !important;
+    }
+
+    &-2{
+        color: $color-dark-cyan !important;
+    }
+
+    &-3{
+        color: $color-very-dark-cyan !important;
+    }
+}
