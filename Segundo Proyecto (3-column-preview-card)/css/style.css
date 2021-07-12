@@ -1,3 +1,23 @@
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 402px !important; } }
+
+@media (min-width: 767px) {
+  .container, .container-sm, .container-md {
+    max-width: 402px !important; } }
+
+@media (min-width: 991px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 402px !important; } }
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px !important; } }
+
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1320px !important; } }
+
 .card-title {
   font-family: "Big Shoulders Display", sans-serif !important;
   text-transform: uppercase;
@@ -47,6 +67,10 @@ body {
     color: #006870 !important; }
   .btn-3 {
     color: #004241 !important; }
+  .btn:hover {
+    cursor: pointer;
+    background-color: transparent !important;
+    color: #f2f2f2 !important; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)

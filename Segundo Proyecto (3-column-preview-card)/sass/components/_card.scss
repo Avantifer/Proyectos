@@ -38,4 +38,10 @@
     &-3{
         color: $color-very-dark-cyan !important;
     }
+
+    &:hover{
+        cursor: pointer;
+        background-color: transparent !important;
+        color: $color-light-grey !important;
+    }
 }
