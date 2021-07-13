@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #19a2ae !important; }
+
+.img-1 {
+  position: absolute;
+  transform: translate(-25rem, -25rem); }
+
+.img-2 {
+  position: fixed;
+  transform: translate(45rem, 20rem); }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
