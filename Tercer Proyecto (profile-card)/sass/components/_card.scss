@@ -1,0 +1,13 @@
+.card{
+    width: 22rem;
+    height: auto;
+    position: absolute;
+    @include absCenter;
+    border-radius: 20px !important;
+    overflow: hidden;
+    border: none !important;    
+    &-image{
+        position: absolute;
+        @include imageCenter;
+    }
+}

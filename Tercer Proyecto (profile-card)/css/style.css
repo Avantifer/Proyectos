@@ -2,16 +2,50 @@
   margin: 0;
   padding: 0; }
 
+html,
+body {
+  height: 100%; }
+
 body {
   background-color: #19a2ae !important; }
 
 .img-1 {
-  position: absolute;
-  transform: translate(-25rem, -25rem); }
+  position: fixed;
+  transform: translate(-20rem, -28rem); }
 
 .img-2 {
   position: fixed;
   transform: translate(45rem, 20rem); }
+
+.card-title span {
+  font-weight: 400;
+  color: #969696 !important; }
+
+.card-text, .card-list-word {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #969696 !important; }
+
+.card-list-title {
+  font-size: 18px;
+  font-weight: 700; }
+
+.card-list-word {
+  font-size: 13px; }
+
+.card {
+  width: 22rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px !important;
+  overflow: hidden;
+  border: none !important; }
+  .card-image {
+    position: absolute;
+    top: 24%;
+    left: 35%; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
