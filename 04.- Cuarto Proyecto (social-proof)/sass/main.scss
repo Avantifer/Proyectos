@@ -1,0 +1,10 @@
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/ratings";
+@import "components/reviews";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
