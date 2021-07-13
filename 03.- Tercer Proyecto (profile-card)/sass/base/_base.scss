@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    background-color: $color-dark-cyan !important;
+}
+
+.img-1{
+    position: fixed;
+    transform: translate(-20rem,-28rem);
+}
+
+.img-2{
+    position: fixed;
+    transform: translate(45rem, 20rem);
+}

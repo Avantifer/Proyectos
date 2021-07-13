@@ -1,0 +1,26 @@
+.card{
+
+    &-title{
+        span{
+            font-weight: 400;
+            color: $color-grey !important;
+        }
+    }
+
+    &-text, &-list-word{
+        font-family: "Kumbh Sans", sans-serif;
+        color: $color-grey !important;
+    }
+
+    &-list{
+        &-title{
+            font-size: $font-size-regular;
+            font-weight: 700;
+
+        }
+
+        &-word{
+            font-size: 13px;
+        }
+    }
+}
