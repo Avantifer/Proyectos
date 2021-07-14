@@ -1,0 +1,31 @@
+.card{
+    position: relative !important;
+    background-color: $color-dark-magenta !important;
+    border-radius: 0.5rem !important;
+    img{
+        position: absolute;
+        width: 3rem;
+        left: 2rem;
+        top: 2.2rem;
+    }
+
+    &-title, .text-muted{
+        padding-left: 5.5rem;
+    }
+
+    &-title{
+        margin-bottom: -0.1rem !important;
+    }
+
+    &-text{
+        padding-top: 2rem;
+    }
+
+    &-2{
+        transform: translateY(1.2rem);
+    }
+
+    &-3{
+        transform: translateY(2.4rem);
+    }
+}

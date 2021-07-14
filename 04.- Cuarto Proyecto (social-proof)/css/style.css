@@ -2,22 +2,37 @@
   padding: 0;
   margin: 0; }
 
-html, body {
-  height: 100%; }
-
 body {
-  margin: 8% !important; }
-
-h1, .h1 {
-  font-size: 3rem !important; }
+  margin: 5% 5% 0 5% !important; }
 
 .column-1 h1, .column-1 .h1 {
-  padding-right: 15rem !important;
+  font-size: 3rem !important;
   color: #502050; }
 
 .column-1 p {
-  padding-right: 13rem;
   color: #937b92; }
+
+.card-title, .card-text, .card .text-muted {
+  font-family: "Spartan", sans-serif !important; }
+
+.card .text-muted {
+  color: #ee68a4 !important; }
+
+.card-title {
+  font-weight: 700; }
+
+.card-title, .card-text {
+  color: white; }
+
+.card-text {
+  font-weight: 400;
+  font-size: 15px; }
+
+.column-1 h1, .column-1 .h1 {
+  padding-right: 15rem !important; }
+
+.column-1 p {
+  padding-right: 13rem; }
 
 .navbar {
   border-radius: 0.7rem;
@@ -32,6 +47,26 @@ h1, .h1 {
     transform: translateX(2.5rem); }
   .navbar-3 {
     transform: translateX(5rem); }
+
+.card {
+  position: relative !important;
+  background-color: #502050 !important;
+  border-radius: 0.5rem !important; }
+  .card img {
+    position: absolute;
+    width: 3rem;
+    left: 2rem;
+    top: 2.2rem; }
+  .card-title, .card .text-muted {
+    padding-left: 5.5rem; }
+  .card-title {
+    margin-bottom: -0.1rem !important; }
+  .card-text {
+    padding-top: 2rem; }
+  .card-2 {
+    transform: translateY(1.2rem); }
+  .card-3 {
+    transform: translateY(2.4rem); }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
