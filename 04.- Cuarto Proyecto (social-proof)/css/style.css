@@ -1,3 +1,38 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 8% !important; }
+
+h1, .h1 {
+  font-size: 3rem !important; }
+
+.column-1 h1, .column-1 .h1 {
+  padding-right: 15rem !important;
+  color: #502050; }
+
+.column-1 p {
+  padding-right: 13rem;
+  color: #937b92; }
+
+.navbar {
+  border-radius: 0.7rem;
+  background-color: #f7f2f7;
+  justify-content: start !important;
+  width: 81% !important; }
+  .navbar h5, .navbar .h5 {
+    color: #502050; }
+  .navbar img {
+    padding-right: 5px; }
+  .navbar-2 {
+    transform: translateX(2.5rem); }
+  .navbar-3 {
+    transform: translateX(5rem); }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
