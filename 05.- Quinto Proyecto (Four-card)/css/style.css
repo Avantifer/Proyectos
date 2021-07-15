@@ -1,3 +1,16 @@
+@media (max-width: 992px) {
+  .cards {
+    grid: " left " " top " " bottom " " right ";
+    gap: 2rem; }
+    .cards .mx-5 {
+      margin: 0 !important; }
+    .cards-builder {
+      margin: 0 !important; } }
+
+@media (min-width: 993px) {
+  .cards {
+    grid: " . top . " " left top right" " left bottom right" " . bottom ."; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -25,8 +38,7 @@ p {
 
 .cards {
   margin: 5rem;
-  display: grid;
-  grid: " . top . " " left top right" " left bottom right" " . bottom ."; }
+  display: grid; }
   .cards-builder {
     grid-area: top !important; }
   .cards-calculator {

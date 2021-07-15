@@ -1,11 +1,6 @@
 .cards{
     margin: 5rem;
     display: grid;
-    grid:
-        " . top . "
-        " left top right"
-        " left bottom right"
-        " . bottom .";
 
     &-builder{
         grid-area: top !important;
