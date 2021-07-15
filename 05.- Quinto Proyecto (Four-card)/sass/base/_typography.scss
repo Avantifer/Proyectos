@@ -1,0 +1,30 @@
+p{
+    color: $color-grayish-blue;
+}
+
+.text{
+
+    .title{
+        &-1{
+            font-weight: 200;
+        }
+    
+        &-2{
+            font-weight: 600;
+        }
+    }
+}
+
+.card{
+
+    &-title{
+        font-weight: 600;
+    }
+
+    &-text{
+
+        line-height: 1.8rem;
+    }
+}
+
+

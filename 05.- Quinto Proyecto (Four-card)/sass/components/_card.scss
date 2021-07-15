@@ -1,0 +1,38 @@
+.cards{
+    margin: 5rem;
+    display: grid;
+    grid:
+        " . top . "
+        " left top right"
+        " left bottom right"
+        " . bottom .";
+
+    &-builder{
+        grid-area: top !important;
+    }
+
+    &-calculator{
+        grid-area: right !important;
+    }
+
+    &-karma{
+        grid-area: bottom !important;
+    }
+
+    &-supervisor{
+        grid-area: left !important;
+    }
+
+    &-images{
+        width: 100%;
+    }
+
+    &-image{
+        width: 5rem;
+        float: right;
+    }
+}
+
+.card{
+    border: none !important;
+}

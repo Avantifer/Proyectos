@@ -1,3 +1,52 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 5% 5%;
+  background-color: #f1f0f0 !important;
+  font-family: "Poppins" !important;
+  font-size: 15px !important; }
+
+p {
+  color: #a3a5ae; }
+
+.text .title-1 {
+  font-weight: 200; }
+
+.text .title-2 {
+  font-weight: 600; }
+
+.card-title {
+  font-weight: 600; }
+
+.card-text {
+  line-height: 1.8rem; }
+
+.cards {
+  margin: 5rem;
+  display: grid;
+  grid: " . top . " " left top right" " left bottom right" " . bottom ."; }
+  .cards-builder {
+    grid-area: top !important; }
+  .cards-calculator {
+    grid-area: right !important; }
+  .cards-karma {
+    grid-area: bottom !important; }
+  .cards-supervisor {
+    grid-area: left !important; }
+  .cards-images {
+    width: 100%; }
+  .cards-image {
+    width: 5rem;
+    float: right; }
+
+.card {
+  border: none !important; }
+
+.text {
+  width: 50% !important; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
