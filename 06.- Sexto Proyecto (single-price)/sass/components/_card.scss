@@ -1,0 +1,26 @@
+.card{
+    border: none !important;
+    border-radius: 1rem !important;
+
+    &-bot-left{
+        background-color: $color-cyan;
+
+        &-btn{
+            background-color: $color-yellow !important;
+            padding: 0.7rem 0 !important;
+            width: 100%;
+        }
+    }
+
+    &-bot-right{
+        background-color: $color-light-cyan;
+
+        p{
+            padding-right: 1.8rem;
+        }
+    }
+}
+
+.row{
+    --bs-gutter-x: 0 !important;
+}

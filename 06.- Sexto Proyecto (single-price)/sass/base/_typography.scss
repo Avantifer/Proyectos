@@ -1,0 +1,47 @@
+h3, h4 ,h5{
+    font-weight: 700 !important;
+}
+
+.card{
+    &-top{
+        h4{
+            color: $color-cyan;
+        }
+    
+        h5{
+            color: $color-yellow;
+            font-size: 18px;
+        }
+    
+        p{
+            color: $color-blue;
+        }
+    }
+
+    &-bot-left{
+        color: $color-white;
+
+        &-btn{
+            color: $color-white !important;
+        }
+
+        h3{
+            span{
+                font-size: $font-regular-size;
+                font-weight: 400;
+                color: $color-gray;
+            }
+        }
+    }
+
+    &-bot-right{
+
+        h5{
+            color: $color-white;
+        }
+
+        p{
+            color: $color-gray;
+        }
+    }
+}

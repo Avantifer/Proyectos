@@ -1,3 +1,57 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Karla", sans-serif !important;
+  font-size: 16px !important;
+  margin: 4% 28% !important; }
+
+h3, .h3, h4, .h4, h5, .h5 {
+  font-weight: 700 !important; }
+
+.card-top h4, .card-top .h4 {
+  color: #2ab2af; }
+
+.card-top h5, .card-top .h5 {
+  color: #c0df34;
+  font-size: 18px; }
+
+.card-top p {
+  color: #98a6bd; }
+
+.card-bot-left {
+  color: white; }
+  .card-bot-left-btn {
+    color: white !important; }
+  .card-bot-left h3 span, .card-bot-left .h3 span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e5eff5; }
+
+.card-bot-right h5, .card-bot-right .h5 {
+  color: white; }
+
+.card-bot-right p {
+  color: #e5eff5; }
+
+.card {
+  border: none !important;
+  border-radius: 1rem !important; }
+  .card-bot-left {
+    background-color: #2ab2af; }
+    .card-bot-left-btn {
+      background-color: #c0df34 !important;
+      padding: 0.7rem 0 !important;
+      width: 100%; }
+  .card-bot-right {
+    background-color: #30c5c3; }
+    .card-bot-right p {
+      padding-right: 1.8rem; }
+
+.row {
+  --bs-gutter-x: 0 !important; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
