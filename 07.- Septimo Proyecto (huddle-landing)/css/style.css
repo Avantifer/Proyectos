@@ -1,3 +1,12 @@
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+.fa-instagram {
+  height: 5rem;
+  width: 5rem; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
