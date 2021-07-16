@@ -1,0 +1,29 @@
+@media (max-width: 1300px){
+    .card-bot-right{
+        p{
+            padding-right: 0.5rem !important;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .card-bot-right{
+        p{
+            padding-right: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .row-bot{
+        flex-direction: column !important;
+    }
+
+    .col-6{
+        width: 100% !important;
+    }
+
+    .card-bot-left-btn{
+        margin-bottom: 1rem !important;
+    }
+}
