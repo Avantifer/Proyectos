@@ -3,9 +3,58 @@
   margin: 0;
   padding: 0; }
 
-.fa-instagram {
-  height: 5rem;
-  width: 5rem; }
+body {
+  background-color: #674baf !important;
+  margin: 3% !important;
+  background-image: url("/img/bg-desktop.svg"); }
+
+h1, .h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important; }
+
+p, .btn {
+  font-family: "Open Sans", sans-serif !important; }
+
+h1, .h1, p {
+  color: white; }
+
+.btn {
+  font-size: 18px !important; }
+
+.logo {
+  width: 15%;
+  height: 15%;
+  margin-bottom: 5rem; }
+
+.text {
+  padding: 0 6rem !important; }
+
+.btn {
+  padding: 2rem 4.5rem !important;
+  color: #674baf !important;
+  border: none !important; }
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #e882e8 !important;
+  color: white !important; }
+
+i {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 1rem; }
+
+.fab {
+  color: white !important; }
+
+i:hover {
+  border: 1px solid #e882e8 !important; }
+
+.fab:hover {
+  color: #e882e8 !important; }
+
+.img {
+  width: 100%; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)

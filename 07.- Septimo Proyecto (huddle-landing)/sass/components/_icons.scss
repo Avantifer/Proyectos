@@ -1,0 +1,17 @@
+i{
+    border-radius: 50%;
+    border: 1px solid $color-white;
+    padding: 1rem;
+}
+
+.fab{
+    color: $color-white !important;
+}
+
+i:hover{
+    border: 1px solid $color-soft-magenta !important;
+}
+
+.fab:hover{
+    color: $color-soft-magenta !important;
+}

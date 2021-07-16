@@ -1,0 +1,15 @@
+.text{
+    padding: 0 6rem !important;
+}
+
+.btn{
+    padding: 2rem 4.5rem !important;
+    color: $color-violet !important;
+    border: none !important;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: $color-soft-magenta !important;
+    color: $color-white !important;
+}
