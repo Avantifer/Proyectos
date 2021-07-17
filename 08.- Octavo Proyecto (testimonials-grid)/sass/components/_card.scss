@@ -1,0 +1,67 @@
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    grid-template-areas:
+        "Daniel Daniel Jonathan Kira"
+        "Jeanette Patrick Patrick Kira";
+
+    &-Daniel{
+        grid-area: Daniel;
+        background-color: $color-violet !important;
+
+        .card-top{
+
+            &-img{
+                width: 3rem;
+                border: 3.3px solid $color-light-violet !important;
+            }
+        
+            &-texto{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+
+        &-card-body{
+            z-index: 100 !important;
+        }
+
+        &-background{
+            width: 7.5rem;
+            position: absolute;
+            z-index: 0;
+            transform: translate(24rem, -1.5rem);
+        }
+    }
+
+    &-Jonathan{
+        grid-area: Jonathan;
+    }
+
+    &-Kira{
+        grid-area: Kira;
+    }
+
+    &-Jeanette{
+        grid-area: Jeanette;
+    }
+
+    &-Patrick{
+        grid-area: Patrick;
+    }
+}
+
