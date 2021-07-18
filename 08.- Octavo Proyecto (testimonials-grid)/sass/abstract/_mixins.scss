@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .cards{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -12,7 +12,7 @@
     }   
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1201px) {
     .cards{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;

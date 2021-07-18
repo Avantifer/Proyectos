@@ -1,11 +1,11 @@
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .cards {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 2em;
     grid-template-areas: "Daniel" "Jonathan" "Jeanette" "Patrick" "Kira"; } }
 
-@media (min-width: 769px) {
+@media (min-width: 1201px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -25,27 +25,26 @@ body {
 .card {
   border: none !important; }
 
-.cards-Daniel .card-top-texto, .cards-Jonathan .card-top-texto, .cards-Kira .card-top-texto {
-  color: white; }
-  .cards-Daniel .card-top-texto-2, .cards-Jonathan .card-top-texto-2, .cards-Kira .card-top-texto-2 {
-    opacity: 50%; }
+.cards-Daniel .card-top-texto-2, .cards-Jonathan .card-top-texto-2, .cards-Kira .card-top-texto-2, .cards-Jeanette .card-top-texto-2, .cards-Patrick .card-top-texto-2 {
+  opacity: 50%; }
 
-.cards-Daniel-card-body, .cards-Jonathan-card-body, .cards-Kira-card-body {
-  color: white; }
-  .cards-Daniel-card-body h5, .cards-Daniel-card-body .h5, .cards-Jonathan-card-body h5, .cards-Jonathan-card-body .h5, .cards-Kira-card-body h5, .cards-Kira-card-body .h5 {
-    font-size: 1.4rem;
-    font-weight: 600; }
-  .cards-Daniel-card-body p, .cards-Jonathan-card-body p, .cards-Kira-card-body p {
-    opacity: 70%; }
+.cards-Daniel-card-body h5, .cards-Daniel-card-body .h5, .cards-Jonathan-card-body h5, .cards-Jonathan-card-body .h5, .cards-Kira-card-body h5, .cards-Kira-card-body .h5, .cards-Jeanette-card-body h5, .cards-Jeanette-card-body .h5, .cards-Patrick-card-body h5, .cards-Patrick-card-body .h5 {
+  font-size: 1.4rem;
+  font-weight: 600; }
 
-.cards-Kira .card-top-texto {
+.cards-Daniel-card-body p, .cards-Jonathan-card-body p, .cards-Kira-card-body p, .cards-Jeanette-card-body p, .cards-Patrick-card-body p {
+  opacity: 70%; }
+
+.cards-Daniel, .cards-Jonathan, .cards-Patrick {
+  color: white; }
+
+.cards-Kira, .cards-Jeanette {
   color: #19212e; }
-
-.cards-Kira-card-body {
-  color: #19212e !important; }
 
 .cards {
   display: grid; }
+  .cards p {
+    margin-bottom: 0 !important; }
   .cards .card-top {
     position: relative;
     display: flex;
@@ -56,13 +55,9 @@ body {
       position: relative;
       display: flex;
       flex-direction: column; }
-      .cards .card-top-texto p {
-        margin-bottom: 0 !important; }
   .cards-Daniel {
     grid-area: Daniel;
     background-color: #7541c8 !important; }
-    .cards-Daniel .card-top-img {
-      border: 3.3px solid #a775f2 !important; }
     .cards-Daniel-card-body {
       z-index: 100 !important; }
     .cards-Daniel-background {
@@ -74,16 +69,19 @@ body {
   .cards-Jonathan {
     grid-area: Jonathan;
     background-color: #48556a !important; }
-    .cards-Jonathan .card-top-img {
-      border: 3.2px solid white !important; }
   .cards-Kira {
     grid-area: Kira; }
-    .cards-Kira .card-top-img {
-      border: 3.2px solid white !important; }
   .cards-Jeanette {
     grid-area: Jeanette; }
   .cards-Patrick {
-    grid-area: Patrick; }
+    grid-area: Patrick;
+    background-color: #19212e !important; }
+  .cards-Jonathan .card-top-img, .cards-Kira .card-top-img, .cards-Jeanette .card-top-img {
+    border: 3.2px solid white !important; }
+  .cards-Kira, .cards-Jeanette {
+    background-color: white !important; }
+  .cards-Daniel .card-top-img, .cards-Patrick .card-top-img {
+    border: 3.3px solid #a775f2 !important; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)

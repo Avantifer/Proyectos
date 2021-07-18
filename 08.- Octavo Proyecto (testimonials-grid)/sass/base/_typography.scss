@@ -1,11 +1,10 @@
 .cards{
 
-    &-Daniel, &-Jonathan, &-Kira{
+    &-Daniel, &-Jonathan, &-Kira, &-Jeanette, &-Patrick{
 
         .card-top{
         
             &-texto{
-                color: $color-white;
                  
                 &-2{
                     opacity: 50%;
@@ -14,7 +13,6 @@
         }
 
         &-card-body{
-            color: $color-white;
 
             h5{
                 font-size: 1.4rem;
@@ -26,17 +24,13 @@
             }
         }
     }
-    
-    &-Kira{
-        .card-top{
-        
-            &-texto{
-                color: $color-blackish-blue;
-            }
-        }
 
-        &-card-body{
-            color: $color-blackish-blue !important;
-        }
+    &-Daniel, &-Jonathan, &-Patrick{
+        color: $color-white;
+
+    }
+    
+    &-Kira, &-Jeanette{
+        color: $color-blackish-blue;
     }
 }
