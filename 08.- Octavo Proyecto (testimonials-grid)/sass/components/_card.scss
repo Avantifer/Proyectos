@@ -7,12 +7,6 @@
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2em;
-    grid-template-areas:
-        "Daniel Daniel Jonathan Kira"
-        "Jeanette Patrick Patrick Kira";
 
     &-Daniel{
         grid-area: Daniel;
@@ -44,7 +38,8 @@
             width: 7.5rem;
             position: absolute;
             z-index: 0;
-            transform: translate(24rem, -1.5rem);
+            left: 63%;
+            top: 0%;
         }
     }
 
