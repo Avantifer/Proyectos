@@ -1,12 +1,26 @@
-.card-top{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-
 
 .cards{
     display: grid;
+
+    .card-top{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    
+        &-img{
+            width: 3rem;
+        }
+    
+        &-texto{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+    
+            p{
+                margin-bottom: 0 !important;
+            }
+        }
+    }
 
     &-Daniel{
         grid-area: Daniel;
@@ -15,18 +29,7 @@
         .card-top{
 
             &-img{
-                width: 3rem;
                 border: 3.3px solid $color-light-violet !important;
-            }
-        
-            &-texto{
-                position: relative;
-                display: flex;
-                flex-direction: column;
-
-                p{
-                    margin-bottom: 0 !important;
-                }
             }
         }
 
@@ -45,10 +48,23 @@
 
     &-Jonathan{
         grid-area: Jonathan;
+        background-color: $color-grayish-blue !important;
+        .card-top{
+
+            &-img{
+                border: 3.2px solid $color-white !important;
+            }
+        }
     }
 
     &-Kira{
         grid-area: Kira;
+        .card-top{
+
+            &-img{
+                border: 3.2px solid $color-white !important;
+            }
+        }
     }
 
     &-Jeanette{

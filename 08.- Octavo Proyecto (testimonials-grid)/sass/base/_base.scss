@@ -5,6 +5,11 @@
 
 body{
     font-family: "Barlow Semi Condensed", sans-serif !important;
+    background-color: $color-light-gray !important;
     font-size: $font-regular-size !important;
     margin: 5% 0 !important;
+}
+
+.card{
+    border: none !important;
 }

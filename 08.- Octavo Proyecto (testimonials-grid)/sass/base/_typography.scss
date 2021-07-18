@@ -1,13 +1,8 @@
 .cards{
 
-    &-Daniel{
+    &-Daniel, &-Jonathan, &-Kira{
 
         .card-top{
-
-            &-img{
-                width: 3rem;
-                border: 3.3px solid $color-light-violet !important;
-            }
         
             &-texto{
                 color: $color-white;
@@ -29,6 +24,19 @@
             p{
                 opacity: 70%;
             }
+        }
+    }
+    
+    &-Kira{
+        .card-top{
+        
+            &-texto{
+                color: $color-blackish-blue;
+            }
+        }
+
+        &-card-body{
+            color: $color-blackish-blue !important;
         }
     }
 }
