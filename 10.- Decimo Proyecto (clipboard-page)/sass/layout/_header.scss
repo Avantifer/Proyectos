@@ -1,0 +1,37 @@
+header{
+    background: linear-gradient(rgba($color-white, 0.4), rgba($color-white, 0.4)), url("/img/bg-header-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5rem;
+    .texto{
+        width: 41%;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        .btn-lg{
+            padding: 1rem 2.3rem;
+            border: none;
+        }
+
+        &-1{
+            background-color: $color-cyan;
+            box-shadow:  0 4px 0 $color-shadow-cyan;
+        }
+
+        &-2{
+            background-color: $color-light-blue;
+            box-shadow:  0 4px 0 $color-shadow-light-blue;
+        }
+
+    }
+}

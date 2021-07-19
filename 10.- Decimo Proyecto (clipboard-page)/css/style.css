@@ -1,10 +1,57 @@
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Bai Jamjuree", sans-serif !important;
+  font-size: 18px !important; }
+
+h1, .h1 {
+  font-weight: 600 !important;
+  color: #4c545d; }
+
+p {
+  font-weight: 400 !important;
+  color: #9fabb2; }
+
+.buttons .btn-lg, .buttons .btn-group-lg > .btn {
+  color: white;
+  font-weight: 600; }
+
+header {
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/img/bg-header-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5rem; }
+  header .texto {
+    width: 41%; }
+  header .buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; }
+    header .buttons .btn-lg, header .buttons .btn-group-lg > .btn {
+      padding: 1rem 2.3rem;
+      border: none; }
+    header .buttons-1 {
+      background-color: #26baa4;
+      box-shadow: 0 4px 0 #20a089; }
+    header .buttons-2 {
+      background-color: #6173ff;
+      box-shadow: 0 4px 0 #5964bd; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
