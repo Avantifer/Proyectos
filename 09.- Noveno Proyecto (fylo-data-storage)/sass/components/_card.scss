@@ -1,0 +1,101 @@
+.cards{
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+
+.card-left, .card-right{
+    background-color: $color-dark-blue;
+}
+
+.card-left{
+    border-radius: 0.62rem;
+    border-top-right-radius: 50%;
+
+    &-bot{
+
+        .img{
+            background-color: $color-very-dark-blue;
+            border-radius: 0.62rem;
+            margin-right: 0.62rem;
+
+            &-1{
+                padding: 0.7rem;
+            }
+
+            &-2{
+                padding: 0.85rem;
+            }
+
+            &-3{
+                padding: 0.95rem;
+            }
+        }
+    }
+}
+
+.card-right{
+    border-radius: 0.62rem;
+    position: relative;
+
+    &-bar{
+        width: 100%;
+        height: 1.25rem;
+        background: $color-very-dark-blue;
+        border-radius: 1.87rem;
+        padding: 3px;
+
+        &-line{
+            width: 75%;
+            height: 0.87rem;
+            border-radius: 1.87rem;
+            background: linear-gradient(to right, $color-gradient);
+            position: relative;
+        }
+
+        &-dot{
+            width: 0.62rem;
+            height: 0.62rem;
+            border-radius: 50%;
+            background: $color-white;
+            position: absolute;
+            right: 2px;
+            top: 2px;
+        }
+    }
+
+    &-text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-bubble{
+        width: 8.75rem;
+        height: 4rem;
+        background: $color-white;
+        border-radius: 0.62rem;
+        position: absolute;
+        padding: 0.87rem;
+        bottom: 10.5rem;
+        left: 29rem;
+        h2 {
+
+          span {
+            position: relative;
+            top: -3px;
+          }
+        }
+        &::after {
+            content: '';
+            width: 50%;
+            height: 60%;
+            background: $color-white;
+            position: absolute;
+            top: 3.3rem;
+            right: 0px;
+            border-bottom-left-radius: 100%;
+            clip-path: polygon(100% 0, 47% 0, 100% 100%);
+        }
+    }
+}   

@@ -1,3 +1,102 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  margin: 15.5% !important;
+  background-color: #0c122c !important;
+  font-size: 14px !important;
+  font-family: "Raleway", sans-serif !important;
+  background-image: url("/img/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 140%; }
+
+.card-right p {
+  color: #dddbff; }
+  .card-right p span {
+    font-weight: 700; }
+
+.card-right-bubble h2, .card-right-bubble .h2 {
+  font-size: 1.8rem;
+  font-weight: 700; }
+  .card-right-bubble h2 span, .card-right-bubble .h2 span {
+    color: #848794;
+    text-transform: uppercase;
+    font-size: 0.8rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  gap: 2rem; }
+
+.card-left, .card-right {
+  background-color: #1d2c67; }
+
+.card-left {
+  border-radius: 0.62rem;
+  border-top-right-radius: 50%; }
+  .card-left-bot .img {
+    background-color: #0c122c;
+    border-radius: 0.62rem;
+    margin-right: 0.62rem; }
+    .card-left-bot .img-1 {
+      padding: 0.7rem; }
+    .card-left-bot .img-2 {
+      padding: 0.85rem; }
+    .card-left-bot .img-3 {
+      padding: 0.95rem; }
+
+.card-right {
+  border-radius: 0.62rem;
+  position: relative; }
+  .card-right-bar {
+    width: 100%;
+    height: 1.25rem;
+    background: #0c122c;
+    border-radius: 1.87rem;
+    padding: 3px; }
+    .card-right-bar-line {
+      width: 75%;
+      height: 0.87rem;
+      border-radius: 1.87rem;
+      background: linear-gradient(to right, #ffa399, #ff4d97);
+      position: relative; }
+    .card-right-bar-dot {
+      width: 0.62rem;
+      height: 0.62rem;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      right: 2px;
+      top: 2px; }
+  .card-right-text {
+    display: flex;
+    justify-content: space-between; }
+  .card-right-bubble {
+    width: 8.75rem;
+    height: 4rem;
+    background: white;
+    border-radius: 0.62rem;
+    position: absolute;
+    padding: 0.87rem;
+    bottom: 10.5rem;
+    left: 29rem; }
+    .card-right-bubble h2 span, .card-right-bubble .h2 span {
+      position: relative;
+      top: -3px; }
+    .card-right-bubble::after {
+      content: '';
+      width: 50%;
+      height: 60%;
+      background: white;
+      position: absolute;
+      top: 3.3rem;
+      right: 0px;
+      border-bottom-left-radius: 100%;
+      clip-path: polygon(100% 0, 47% 0, 100% 100%); }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

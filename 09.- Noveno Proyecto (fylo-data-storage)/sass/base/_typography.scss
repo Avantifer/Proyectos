@@ -1,0 +1,24 @@
+.card-right{
+
+    p {
+        color: $color-pale-blue;
+
+        span {
+          font-weight: 700;
+        }
+    }
+
+    &-bubble{
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+
+            span {
+                color: $color-grayish-blue;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
