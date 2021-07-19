@@ -1,0 +1,63 @@
+@media(max-width: 768px){
+    .card-right-bubble{
+        left: 8rem !important;
+    }
+}
+
+@media (max-width: 1099px){
+    body{
+        background-image: url('/img/bg-mobile.png');
+        background-size: cover;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .card-right-bubble{
+        bottom: -1.5rem !important;
+        left: 19rem;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1400px){
+    body{
+        background-position-y: 190% !important;
+    }
+
+    .card-right-bubble{
+        left: 18rem;
+    }
+}
+
+@media (min-width: 1100px){
+    body{
+        background-image: url('/img/bg-desktop.png');
+        background-size: contain;
+        background-position-y: 140%;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 0.68fr 1.32fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+    }
+
+    .card-right-bubble{
+        &::after {
+            content: '';
+            width: 50%;
+            height: 60%;
+            background-color: white;
+            position: absolute;
+            top: 3.3rem;
+            right: 0px;
+            border-bottom-left-radius: 100%;
+            clip-path: polygon(100% 0, 47% 0, 100% 100%);
+        }
+    }
+}
