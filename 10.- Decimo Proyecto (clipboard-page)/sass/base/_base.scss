@@ -12,3 +12,12 @@ body{
     font-family: "Bai Jamjuree", sans-serif !important;
     font-size: $font-regular-size !important;
 }
+
+.texto{
+    align-self: center;
+    width: 46%;
+
+    p{
+        padding-top: 0.7rem;
+    }
+}

@@ -1,5 +1,11 @@
 @media (max-width: 1115px){
+    .texto{
+        width: 70% !important;
+    }
+
     .macgrid{
+        gap: 3rem !important;
+
         &-photo{
             width: 100%;
             img{
