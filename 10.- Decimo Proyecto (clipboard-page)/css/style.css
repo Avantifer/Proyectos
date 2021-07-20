@@ -13,7 +13,10 @@
       margin: 0 10rem;
       width: 55% !important; }
       .macgrid-text h5, .macgrid-text .h5, .macgrid-text p {
-        text-align: center; } }
+        text-align: center; }
+  .toolsgrid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr !important; } }
 
 * {
   padding: 0;
@@ -68,6 +71,27 @@ p {
   align-items: center; }
   .devices .img {
     width: 60%; }
+
+.tools {
+  display: flex;
+  flex-direction: column; }
+  .toolsgrid {
+    margin: 0 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; }
+    .toolsgrid-blacklist, .toolsgrid-snippets, .toolsgrid-preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .toolsgrid-blacklist .img-1, .toolsgrid-snippets .img-1, .toolsgrid-preview .img-1 {
+        margin-bottom: 3rem; }
+      .toolsgrid-blacklist .img-2, .toolsgrid-snippets .img-2, .toolsgrid-preview .img-2 {
+        margin-bottom: 3.5rem; }
+      .toolsgrid-blacklist .img-3, .toolsgrid-snippets .img-3, .toolsgrid-preview .img-3 {
+        margin-bottom: 3.5rem; }
+      .toolsgrid-blacklist p, .toolsgrid-snippets p, .toolsgrid-preview p {
+        text-align: center; }
 
 header {
   width: 100%;
