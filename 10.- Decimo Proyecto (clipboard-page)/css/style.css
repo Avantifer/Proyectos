@@ -7,16 +7,29 @@
     .macgrid-photo {
       width: 100%; }
       .macgrid-photo img {
-        transform: translateX(5rem) !important;
+        transform: translateX(3.5rem) !important;
         width: 80%; }
     .macgrid-text {
-      margin: 0 10rem;
-      width: 55% !important; }
+      margin: 0 5rem !important;
+      width: 100% !important; }
       .macgrid-text h5, .macgrid-text .h5, .macgrid-text p {
         text-align: center; }
+  .devices .img {
+    width: 90% !important;
+    margin-bottom: 5rem; }
   .toolsgrid {
     grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr !important; } }
+    grid-template-rows: 1fr 1fr 1fr !important;
+    margin: 0 5rem !important;
+    gap: 4rem; }
+    .toolsgrid .img-1 {
+      margin-bottom: 2rem !important; }
+    .toolsgrid .img-2 {
+      margin-bottom: 2.5rem !important; }
+    .toolsgrid .img-3 {
+      margin-bottom: 2.5rem !important; }
+  .brands {
+    justify-content: center; } }
 
 * {
   padding: 0;
@@ -31,10 +44,34 @@ body {
   font-size: 18px !important; }
 
 .texto {
+  display: flex;
   align-self: center;
+  flex-direction: column;
   width: 46%; }
   .texto p {
     padding-top: 0.7rem; }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; }
+  .buttons .btn-lg, .buttons .btn-group-lg > .btn {
+    padding: 1rem 2.3rem;
+    border: none; }
+    .buttons .btn-lg:hover, .buttons .btn-group-lg > .btn:hover {
+      filter: brightness(124%); }
+  .buttons-1 {
+    background-color: #26baa4;
+    box-shadow: 0 4px 0 #20a089; }
+  .buttons-2 {
+    background-color: #6173ff;
+    box-shadow: 0 4px 0 #5964bd; }
+
+.before-footer {
+  display: flex;
+  flex-direction: column; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-weight: 600 !important;
@@ -93,6 +130,13 @@ p {
       .toolsgrid-blacklist p, .toolsgrid-snippets p, .toolsgrid-preview p {
         text-align: center; }
 
+.brands {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7rem;
+  margin: 4rem 10rem 6rem 10rem; }
+
 header {
   width: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/img/bg-header-desktop.png");
@@ -105,21 +149,6 @@ header {
   margin-bottom: 5rem; }
   header-texto {
     width: 41%; }
-  header .buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem; }
-    header .buttons .btn-lg, header .buttons .btn-group-lg > .btn {
-      padding: 1rem 2.3rem;
-      border: none; }
-    header .buttons-1 {
-      background-color: #26baa4;
-      box-shadow: 0 4px 0 #20a089; }
-    header .buttons-2 {
-      background-color: #6173ff;
-      box-shadow: 0 4px 0 #5964bd; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)

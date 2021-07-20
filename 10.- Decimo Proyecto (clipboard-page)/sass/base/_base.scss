@@ -14,10 +14,45 @@ body{
 }
 
 .texto{
+    display: flex;
     align-self: center;
+    flex-direction: column;
     width: 46%;
 
     p{
         padding-top: 0.7rem;
     }
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    .btn-lg{
+        padding: 1rem 2.3rem;
+        border: none;
+
+        &:hover{
+            filter: brightness(124%);
+        }
+    }
+
+    &-1{
+        background-color: $color-cyan;
+        box-shadow:  0 4px 0 $color-shadow-cyan;
+    }
+
+    &-2{
+        background-color: $color-light-blue;
+        box-shadow:  0 4px 0 $color-shadow-light-blue;
+    }
+
+}
+
+.before-footer{
+    display: flex;
+    flex-direction: column;
 }
