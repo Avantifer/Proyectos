@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+html, body{
+    width: 100% !important;
+    height: 100%;
+}
+
 body{
     font-family: "Bai Jamjuree", sans-serif !important;
     font-size: $font-regular-size !important;

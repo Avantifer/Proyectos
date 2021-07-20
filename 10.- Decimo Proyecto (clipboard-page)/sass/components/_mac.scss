@@ -1,0 +1,30 @@
+.mac{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    .texto{
+        align-self: center;
+        width: 46%;
+    }
+
+    &grid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5rem;
+
+        &-photo{
+
+            img{
+                transform: translateX(-2rem);
+            }
+        }
+
+        &-text{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+    }
+}

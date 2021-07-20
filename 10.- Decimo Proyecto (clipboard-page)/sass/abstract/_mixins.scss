@@ -1,0 +1,21 @@
+@media (max-width: 1115px){
+    .macgrid{
+        &-photo{
+            width: 100%;
+            img{
+                transform: translateX(5rem) !important;
+                width: 80%;
+            }
+        }
+
+        &-text{
+            margin: 0 10rem;
+            width: 55% !important;
+
+            h5, p{
+                text-align: center;
+            }
+        }
+    }
+    
+}
