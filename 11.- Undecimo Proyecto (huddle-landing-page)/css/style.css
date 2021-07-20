@@ -1,3 +1,27 @@
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
+@media (max-width: 576px) {
+  nav img {
+    width: 8rem; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 18px !important;
+  font-family: "Open Sans", sans-serif !important;
+  margin: 3rem !important; }
+
+nav .btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
