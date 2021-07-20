@@ -1,0 +1,47 @@
+footer{
+    margin-top: 7.5rem;
+    padding: 2rem 5rem;
+    display: grid; 
+    grid-template-columns: 0.7fr 1.6fr 0.7fr; 
+    grid-template-rows: 1fr; 
+    background-color: $color-grey;
+
+    .links{
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 4rem;
+
+        p{
+            margin-bottom: 0 !important;
+
+            &:first-child(){
+                padding-right: 2.9rem;
+                padding-bottom: 1rem ;
+            }
+        }
+        
+    }
+
+    .img{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 25%;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 3rem !important;
+
+        img{
+            height: 40%;
+        }
+    }
+}

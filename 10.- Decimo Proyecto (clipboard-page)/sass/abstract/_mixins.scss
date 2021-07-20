@@ -54,4 +54,52 @@
     .brands{
         justify-content: center;
     }
+
+    footer{
+        grid-template-columns: 1fr !important; 
+        grid-template-rows: 0.7fr 1.6fr 0.7fr !important; 
+
+        .img{
+            width: 14% !important;
+        }
+
+        .links{
+            margin-top: 1rem;
+            flex-direction: column !important;
+            width: 100% !important;
+            text-align: center;
+
+            &-1{
+                order: 1;
+            }
+
+            &-2{
+                order: 3;
+            }
+
+            &-3{
+                order: 5;
+            }
+
+            &-4{
+                order: 2;
+            }
+
+            &-5{
+                order: 4;
+            }
+
+            p{
+                padding-bottom: 1rem;
+
+                &:first-child(){
+                    padding-right: 0 !important;
+                }
+            }
+        }
+        
+        .social{
+            gap: 3rem !important;
+        }
+    }
 }

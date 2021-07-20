@@ -29,7 +29,33 @@
     .toolsgrid .img-3 {
       margin-bottom: 2.5rem !important; }
   .brands {
-    justify-content: center; } }
+    justify-content: center; }
+  footer {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 0.7fr 1.6fr 0.7fr !important; }
+    footer .img {
+      width: 14% !important; }
+    footer .links {
+      margin-top: 1rem;
+      flex-direction: column !important;
+      width: 100% !important;
+      text-align: center; }
+      footer .links-1 {
+        order: 1; }
+      footer .links-2 {
+        order: 3; }
+      footer .links-3 {
+        order: 5; }
+      footer .links-4 {
+        order: 2; }
+      footer .links-5 {
+        order: 4; }
+      footer .links p {
+        padding-bottom: 1rem; }
+        footer .links p:first-child {
+          padding-right: 0 !important; }
+    footer .social {
+      gap: 3rem !important; } }
 
 * {
   padding: 0;
@@ -84,6 +110,9 @@ p {
 .buttons .btn-lg, .buttons .btn-group-lg > .btn {
   color: white;
   font-weight: 600; }
+
+footer p {
+  color: #4c545d; }
 
 .mac {
   display: flex;
@@ -149,6 +178,40 @@ header {
   margin-bottom: 5rem; }
   header-texto {
     width: 41%; }
+
+footer {
+  margin-top: 7.5rem;
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  grid-template-rows: 1fr;
+  background-color: #f5f6f8; }
+  footer .links {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 4rem; }
+    footer .links p {
+      margin-bottom: 0 !important; }
+      footer .links p:first-child {
+        padding-right: 2.9rem;
+        padding-bottom: 1rem; }
+  footer .img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 25%; }
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 3rem !important; }
+    footer .social img {
+      height: 40%; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
