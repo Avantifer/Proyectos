@@ -5,4 +5,39 @@
             width: 8rem;
         }
     }
+
+    header{
+        background-image: url("/img/bg-hero-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+       
+    }
+}
+
+@media (max-width: 993px){
+    header{
+
+        flex-direction: column !important;
+
+        .text, img{
+            width: 100% !important;
+            text-align: center;
+        }
+
+        .text{
+            padding-left: 5rem;
+        }
+
+        .btn{
+            width: 80% !important;
+            align-self: center;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    header{
+        background-image: url("/img/bg-hero-desktop.svg");
+    }
 }
