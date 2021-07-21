@@ -67,6 +67,29 @@
             }
         }
     }
+
+    footer{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+
+        .row, .col-4{
+            flex-direction: column;
+            align-items: flex-start !important;
+
+            .col-5, .col-4, .col-3{
+                width: 100%;
+            }
+        }
+
+        .col-3{
+            padding-top: 5rem;
+            justify-content: center;
+        }
+
+        .copyright{
+            justify-content: center !important;
+        }
+    }
 }
 
 @media (min-width: 576px) {
