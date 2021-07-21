@@ -1,0 +1,21 @@
+.box{
+    width: 100%;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    
+
+    .prefooter{
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        border-radius: 1rem;
+
+        .btn{
+            background-color: $color-pink !important;
+            width: 55%;
+        }
+    }
+}

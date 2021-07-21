@@ -3,13 +3,16 @@
     font-weight: 700 !important;
 }
 
+h1, h2, h3, h4, h5{
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 700 !important;
+}
+
 header{
 
     .text{
 
         h1{
-            font-family: "Poppins";
-            font-weight: 600;
             line-height: 4rem;
         }
     }
@@ -25,14 +28,16 @@ main{
 
         .col-7{
 
-            h3{
-                font-family: "Open Sans", sans-serif !important;
-                font-weight: 700 !important;
-            }
-
             p{
                 color: $color-blue;
             }
+        }
+    }
+
+    .prefooter{
+
+        .btn{
+            color: $color-white;
         }
     }
 }
