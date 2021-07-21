@@ -104,14 +104,16 @@ footer {
   width: 100%;
   margin-top: 12rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  transform: translateY(9.5rem); }
   .box .prefooter {
     padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    background-color: white; }
     .box .prefooter .btn {
       background-color: #ff52bf !important;
       width: 55%; }
