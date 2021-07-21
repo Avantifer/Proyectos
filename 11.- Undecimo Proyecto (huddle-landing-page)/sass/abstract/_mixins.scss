@@ -11,7 +11,6 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-       
     }
 }
 
@@ -32,6 +31,32 @@
         .btn{
             width: 80% !important;
             align-self: center;
+        }
+    }
+
+    main{
+
+        .card{
+            padding-bottom: 3rem;
+
+            .row{
+                flex-direction: column !important;
+
+                .col-5{
+                    order: 1;
+                    margin-bottom: 4rem;
+                }
+
+                .col-7{
+                    order: 2;
+                    text-align: center;
+                    padding: 0 4rem;
+                }
+                
+                .col-7, .col-5{
+                    width: 100%;
+                }
+            }
         }
     }
 }

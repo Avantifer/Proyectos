@@ -17,7 +17,20 @@
       padding-left: 5rem; }
     header .btn {
       width: 80% !important;
-      align-self: center; } }
+      align-self: center; }
+  main .card {
+    padding-bottom: 3rem; }
+    main .card .row {
+      flex-direction: column !important; }
+      main .card .row .col-5 {
+        order: 1;
+        margin-bottom: 4rem; }
+      main .card .row .col-7 {
+        order: 2;
+        text-align: center;
+        padding: 0 4rem; }
+      main .card .row .col-7, main .card .row .col-5 {
+        width: 100%; } }
 
 @media (min-width: 576px) {
   header {
@@ -30,7 +43,7 @@
 body {
   font-size: 18px !important;
   font-family: "Open Sans", sans-serif !important;
-  margin: 3rem !important; }
+  margin: 4rem !important; }
 
 .btn {
   font-family: "Open Sans", sans-serif !important;
@@ -44,6 +57,28 @@ header .text h1, header .text .h1 {
 header .btn {
   color: white; }
 
+main .card .col-7 h3, main .card .col-7 .h3 {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700 !important; }
+
+main .card .col-7 p {
+  color: #808d99; }
+
+.card {
+  border: none !important; }
+  .card:not(:last-child) {
+    margin-bottom: 3rem; }
+  .card:last-child {
+    margin-bottom: 9rem; }
+  .card .col-7 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 10rem; }
+  .card-image {
+    width: 100%; }
+
 nav {
   display: flex;
   flex-wrap: nowrap;
@@ -52,6 +87,7 @@ nav {
 
 header {
   padding-top: 3rem;
+  margin-bottom: 14rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; }
@@ -63,7 +99,7 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding-right: 3.7rem;
+    padding-right: 5.5rem;
     width: 44%; }
     header .text h1, header .text .h1, header .text p {
       padding-bottom: 2rem; }
