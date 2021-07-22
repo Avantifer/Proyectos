@@ -1,4 +1,8 @@
 @import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
+@media (max-width: 769px) {
+  header img, header .text, header .btn {
+    width: 90% !important; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -6,10 +10,18 @@
 body {
   font-family: "Open Sans", sans-serif !important;
   font-size: 14px !important;
-  font-weight: 400 !important; }
+  font-weight: 400 !important;
+  color: white !important; }
 
-nav {
-  color: white; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .btn {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700 !important; }
+
+.btn {
+  color: white !important; }
+
+header .text {
+  text-align: center; }
 
 nav {
   background-color: #1c2431;
@@ -23,6 +35,23 @@ nav {
     flex-direction: row; }
     nav .lista p {
       padding-right: 3rem; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c2431; }
+  header img {
+    width: 40%; }
+  header .text {
+    width: 40%; }
+    header .text p {
+      width: 75%;
+      margin: 2rem 0 2rem 4rem; }
+  header .btn {
+    background-color: #339ecc;
+    width: 33%;
+    padding: 0.75rem 0; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
