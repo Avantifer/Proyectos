@@ -9,6 +9,14 @@
     main .tools .text {
       width: 100%; } }
 
+@media (max-width: 1238px) {
+  main .big-card {
+    justify-content: center; }
+    main .big-card .img, main .big-card .text, main .big-card h2, main .big-card .h2 {
+      width: 90% !important; }
+    main .big-card .text {
+      margin-top: 3rem; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -30,6 +38,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .btn {
 header .text {
   text-align: center; }
 
+main .big-card .text .link a {
+  color: #65e2d9; }
+
 .tools {
   margin: 0 8rem 5rem 8rem;
   display: grid;
@@ -45,6 +56,28 @@ header .text {
     width: 60%; }
     .tools .text p {
       text-align: center; }
+
+.big-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5rem 0 8rem; }
+  .big-card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    width: 37%; }
+    .big-card .text h2, .big-card .text .h2 {
+      width: 55%; }
+    .big-card .text .link {
+      width: 8.9rem;
+      border-bottom: 1px solid #65e2d9; }
+      .big-card .text .link a {
+        color: #65e2d9;
+        text-decoration: none; }
+      .big-card .text .link img {
+        height: 10px; }
 
 nav {
   background-color: #1c2431;

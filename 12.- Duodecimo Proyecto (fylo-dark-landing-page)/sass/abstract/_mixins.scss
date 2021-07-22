@@ -18,3 +18,21 @@
         }
     }
 }
+
+@media (max-width: 1238px){
+    main{
+        .big-card{
+            justify-content: center;
+
+            .img, .text, h2{
+                width: 90% !important;
+            }
+
+            .text{
+                margin-top: 3rem;
+            }
+            
+            
+        }
+    }
+}

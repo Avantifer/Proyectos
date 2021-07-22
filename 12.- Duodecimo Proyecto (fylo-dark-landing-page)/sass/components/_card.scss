@@ -1,0 +1,33 @@
+.big-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 5rem 0 8rem;
+
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4rem;
+        width: 37%;
+
+        h2{
+            width: 55%;
+        }
+
+        .link{
+            width: 8.9rem;
+            border-bottom: 1px solid $color-cyan;
+            
+            a{
+                color: $color-cyan;
+                text-decoration: none;
+            }
+
+            img{
+                height: 10px;
+            }
+        }
+    }
+}
