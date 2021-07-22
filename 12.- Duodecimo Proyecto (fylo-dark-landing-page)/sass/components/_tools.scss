@@ -1,0 +1,22 @@
+.tools{
+    margin: 0 8rem 5rem 8rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 2em 2em;
+
+    &-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text{
+        text-align: center;
+        width: 60%;
+
+        p{
+            text-align: center;
+        }
+    }
+}

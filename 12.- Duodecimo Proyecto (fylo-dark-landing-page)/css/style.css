@@ -1,7 +1,13 @@
 @import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
 @media (max-width: 769px) {
   header img, header .text, header .btn {
-    width: 90% !important; } }
+    width: 90% !important; }
+  main .tools {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); }
+    main .tools .text {
+      width: 100%; } }
 
 * {
   margin: 0;
@@ -11,7 +17,8 @@ body {
   font-family: "Open Sans", sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
-  color: white !important; }
+  color: white !important;
+  background-color: #181f2a !important; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .btn {
   font-family: "Raleway", sans-serif !important;
@@ -22,6 +29,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .btn {
 
 header .text {
   text-align: center; }
+
+.tools {
+  margin: 0 8rem 5rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em 2em; }
+  .tools-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .tools .text {
+    text-align: center;
+    width: 60%; }
+    .tools .text p {
+      text-align: center; }
 
 nav {
   background-color: #1c2431;

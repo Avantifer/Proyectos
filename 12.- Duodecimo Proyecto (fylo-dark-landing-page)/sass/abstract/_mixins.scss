@@ -3,6 +3,18 @@
         img, .text, .btn{
             width: 90% !important;
         }
+    }
 
+    main{
+
+        .tools{
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: repeat(4, 1fr);
+
+            .text{
+                width: 100%;
+            }
+        }
     }
 }
