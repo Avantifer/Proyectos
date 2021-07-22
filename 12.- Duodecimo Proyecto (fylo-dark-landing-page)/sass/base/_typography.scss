@@ -25,4 +25,28 @@ main{
             }
         }
     }
+    
+    .reviews{
+        
+        .review{
+    
+            &-simplecard{
+    
+                &-introduction{
+    
+                    .text{
+    
+                        .title{
+                            font-weight: 700;
+                        }
+    
+                        .extra{
+                            opacity: 50%;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
