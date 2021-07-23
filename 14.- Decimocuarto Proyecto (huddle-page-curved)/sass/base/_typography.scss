@@ -2,3 +2,17 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Poppins", sans-serif !important;
     font-weight: 700 !important;
 }
+
+header{
+
+    .text{
+
+        h1{
+            line-height: 4rem;
+        }
+    }
+
+    .btn{
+        color: $color-white;
+    }
+}
