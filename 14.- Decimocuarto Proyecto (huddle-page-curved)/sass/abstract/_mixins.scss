@@ -4,6 +4,7 @@
 
         .card{
             padding-bottom: 3rem;
+            margin: 8rem 1rem;
 
             .row{
                 flex-direction: column !important;
@@ -22,6 +23,17 @@
                 .col-7, .col-5{
                     width: 100%;
                 }
+            }
+        }
+
+        .prefooter{
+            h2{
+                text-align: center;
+            }
+            
+            .btn{
+                width: 80% !important;
+                align-self: center;
             }
         }
     }

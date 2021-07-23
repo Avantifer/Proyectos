@@ -1,0 +1,25 @@
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(9.5rem);
+
+    .prefooter{
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        border-radius: 1rem;
+        background-color: $color-white;
+        
+        .btn{
+            background-color: $color-pink !important;
+            width: 55%;
+
+            &:hover{
+                background-color: $color-light-pink;
+            }
+        }
+    }
+}
