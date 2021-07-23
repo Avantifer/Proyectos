@@ -26,15 +26,25 @@
       main .row .texto h1, main .row .texto .h1 {
         text-align: center; }
     main .row .col-md-6 {
-      width: 100%; } }
+      width: 100%; }
+    main .row .text {
+      text-align: center;
+      padding: 0; }
+    main .row .form {
+      align-items: center; }
+      main .row .form .input {
+        margin-bottom: 1rem; }
+      main .row .form .btn {
+        width: 80%; } }
 
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: "Open Sans", sans-serif !important;
-  padding: 3rem; }
+  font-family: "Open Sans", sans-serif !important; }
+  body > * {
+    padding: 3rem; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Raleway", sans-serif !important;
@@ -60,39 +70,70 @@ main .testimonials .text .subtitle {
   opacity: 0.75;
   font-size: 10px; }
 
-.card {
-  border: none !important;
-  margin-bottom: 5rem; }
-  .card .row .col-md-6 {
-    padding: 2rem;
+main .prefooter {
+  color: white; }
+
+.background-img {
+  height: 5rem;
+  background-image: url(/img/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+main {
+  background-color: #f6f6fe;
+  padding: 0; }
+  main .card {
+    border: none !important;
+    margin: 0 3rem 3rem 5rem;
+    background-color: #f6f6fe; }
+    main .card .row .col-md-6 {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main .card .row .col-md-6 h1, main .card .row .col-md-6 .h1 {
+        margin-bottom: 2rem; }
+      main .card .row .col-md-6 .mainlogo {
+        width: 90%; }
+      main .card .row .col-md-6 .links {
+        border-bottom: 1px solid #3c9f8f;
+        width: 26%;
+        margin-bottom: 2rem; }
+        main .card .row .col-md-6 .links a {
+          text-decoration: none; }
+      main .card .row .col-md-6 .carta {
+        width: 56%;
+        padding: 1rem; }
+      main .card .row .col-md-6 .testimonials {
+        display: flex;
+        align-items: center; }
+        main .card .row .col-md-6 .testimonials .testimonial {
+          height: 10%;
+          width: 13%; }
+        main .card .row .col-md-6 .testimonials .text {
+          display: flex;
+          flex-direction: column; }
+          main .card .row .col-md-6 .testimonials .text p {
+            margin-left: 1rem;
+            margin-bottom: 0; }
+
+.prefooter {
+  background-color: #585989;
+  padding: 4rem 5rem; }
+  .prefooter .text {
+    padding-right: 8rem; }
+  .prefooter .form {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-    .card .row .col-md-6 h1, .card .row .col-md-6 .h1 {
-      margin-bottom: 2rem; }
-    .card .row .col-md-6 .mainlogo {
-      width: 90%; }
-    .card .row .col-md-6 .links {
-      border-bottom: 1px solid #3c9f8f;
-      width: 26%;
-      margin-bottom: 2rem; }
-      .card .row .col-md-6 .links a {
-        text-decoration: none; }
-    .card .row .col-md-6 .carta {
-      width: 56%;
+    justify-content: space-around; }
+    .prefooter .form .input {
+      padding: 0.5rem;
+      width: 80%; }
+    .prefooter .form .input::placeholder {
       padding: 1rem; }
-    .card .row .col-md-6 .testimonials {
-      display: flex;
-      align-items: center; }
-      .card .row .col-md-6 .testimonials .testimonial {
-        height: 10%;
-        width: 13%; }
-      .card .row .col-md-6 .testimonials .text {
-        display: flex;
-        flex-direction: column; }
-        .card .row .col-md-6 .testimonials .text p {
-          margin-left: 1rem;
-          margin-bottom: 0; }
+    .prefooter .form .btn {
+      width: 30%;
+      padding: 0.5rem; }
 
 nav {
   display: flex;
@@ -109,7 +150,7 @@ nav {
       padding-right: 3rem; }
 
 header {
-  margin-bottom: 10rem; }
+  margin-bottom: 5rem; }
   header .card {
     padding: 4rem;
     border: none; }

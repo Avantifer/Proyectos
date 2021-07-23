@@ -1,56 +1,69 @@
-.card{
-    border: none !important;
-    margin-bottom: 5rem;
+.background-img{
+    height: 5rem;
+    background-image: url(/img/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .row{
-
-        .col-md-6{
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h1{
-                margin-bottom: 2rem;
-            }
-
-            .mainlogo{
-                width: 90%;
-            }
-
-            .links{
-                border-bottom: 1px solid $color-moderate-cyan;
-                width: 26%;
-                margin-bottom: 2rem;
-                a{
-                    text-decoration: none;
-                }
-            }
-
-            .carta{
-                width: 56%;
-                padding: 1rem;
-            }
-
-            .testimonials{
+main{
+    background-color: $color-light-grayish-blue;
+    padding: 0;
+    
+    .card{
+        border: none !important;
+        margin: 0 3rem 3rem 5rem;
+        background-color: $color-light-grayish-blue;
+        .row{
+    
+            .col-md-6{
+                padding: 2rem;
                 display: flex;
-                align-items: center;
-
-                .testimonial{
-                    height: 10%;
-                    width: 13%;
+                flex-direction: column;
+                justify-content: center;
+    
+                h1{
+                    margin-bottom: 2rem;
                 }
-
-                .text{
+    
+                .mainlogo{
+                    width: 90%;
+                }
+    
+                .links{
+                    border-bottom: 1px solid $color-moderate-cyan;
+                    width: 26%;
+                    margin-bottom: 2rem;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+    
+                .carta{
+                    width: 56%;
+                    padding: 1rem;
+                }
+    
+                .testimonials{
                     display: flex;
-                    flex-direction: column;
-
-                    p{
-                        margin-left: 1rem;
-                        margin-bottom: 0;
+                    align-items: center;
+    
+                    .testimonial{
+                        height: 10%;
+                        width: 13%;
+                    }
+    
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+    
+                        p{
+                            margin-left: 1rem;
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
         }
     }
 }
+

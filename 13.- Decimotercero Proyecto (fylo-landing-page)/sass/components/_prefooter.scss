@@ -1,0 +1,28 @@
+.prefooter{
+    background-color: $color-desaturated-blue;
+    padding: 4rem 5rem;
+
+    .text{
+        padding-right: 8rem;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        .input{
+            padding: 0.5rem;
+            width: 80%;
+        }
+
+        .input::placeholder{
+            padding: 1rem;
+        }
+
+        .btn{
+            width: 30%;
+            padding: 0.5rem;
+        }
+    }
+}
