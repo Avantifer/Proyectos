@@ -1,0 +1,61 @@
+footer{
+    background-color: $color-dark-blue;
+    padding: 10rem 8rem 3rem 8rem;
+
+    color: $color-white;
+    .row{
+
+        .col-5{
+            
+            .img{
+                filter: contrast(0) brightness(100);
+            }
+
+            .location, .phone, .email{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+
+                img{
+                    padding: 5px 1rem 0 0;
+                }
+            }
+
+        }
+
+        .col-4{
+            display: flex;
+            padding-top: 6rem;
+
+            ul{
+                list-style-type: none;
+
+                li{
+                    margin-bottom: 1rem;
+                }
+            }
+            
+        }
+
+        .col-3{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            .icon{
+                padding-left: 1.5rem;
+
+                i{
+                    border: 1px solid $color-white;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                }
+
+                &-1{
+                    padding: 0.5rem 0.7rem !important;
+
+                }
+            }
+        }
+    }
+}

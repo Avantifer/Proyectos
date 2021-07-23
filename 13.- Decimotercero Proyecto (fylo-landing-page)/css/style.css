@@ -35,7 +35,22 @@
       main .row .form .input {
         margin-bottom: 1rem; }
       main .row .form .btn {
-        width: 80%; } }
+        width: 80%; }
+  footer {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important; }
+    footer .row, footer .col-4 {
+      flex-direction: column;
+      align-items: flex-start !important; }
+      footer .row .col-5, footer .row .col-4, footer .row .col-3, footer .col-4 .col-5, footer .col-4 .col-4, footer .col-4 .col-3 {
+        width: 100%; }
+    footer .col-3 {
+      padding-top: 5rem;
+      justify-content: center; }
+    footer .line1 {
+      margin-bottom: 1rem; }
+    footer ul {
+      padding: 0%; } }
 
 * {
   margin: 0;
@@ -176,6 +191,38 @@ header {
         padding: 1.5rem; }
       header .card .row .form .btn {
         width: calc(100% - 60% - 1rem); }
+
+footer {
+  background-color: #070439;
+  padding: 10rem 8rem 3rem 8rem;
+  color: white; }
+  footer .row .col-5 .img {
+    filter: contrast(0) brightness(100); }
+  footer .row .col-5 .location, footer .row .col-5 .phone, footer .row .col-5 .email {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; }
+    footer .row .col-5 .location img, footer .row .col-5 .phone img, footer .row .col-5 .email img {
+      padding: 5px 1rem 0 0; }
+  footer .row .col-4 {
+    display: flex;
+    padding-top: 6rem; }
+    footer .row .col-4 ul {
+      list-style-type: none; }
+      footer .row .col-4 ul li {
+        margin-bottom: 1rem; }
+  footer .row .col-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer .row .col-3 .icon {
+      padding-left: 1.5rem; }
+      footer .row .col-3 .icon i {
+        border: 1px solid white;
+        padding: 0.5rem;
+        border-radius: 50%; }
+      footer .row .col-3 .icon-1 {
+        padding: 0.5rem 0.7rem !important; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
