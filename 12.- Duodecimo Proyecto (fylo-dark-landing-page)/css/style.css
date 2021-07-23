@@ -27,7 +27,7 @@
 @media (max-width: 913px) {
   .prefooter {
     width: 80% !important;
-    transform: translateX(13%) !important; }
+    transform: translate(13%, 32%) !important; }
     .prefooter-form {
       flex-direction: column !important; }
       .prefooter-form .btn, .prefooter-form .input {
@@ -163,7 +163,7 @@ main .reviews .review-simplecard-introduction .text .extra {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  transform: translateX(35%);
+  transform: translate(35%, 43%);
   padding: 2rem 3rem; }
   .prefooter-text {
     text-align: center; }
