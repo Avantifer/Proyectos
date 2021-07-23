@@ -30,4 +30,33 @@
             }
         }
     }
+
+    main{
+        .row{
+            flex-direction: column;
+            
+            .mainlogo{
+                order: 1;
+            }
+
+            .texto{
+                order: 2;
+                align-items: center;
+
+                h1{
+                    text-align: center;
+                }
+
+                .links{
+
+                }
+            }
+
+            .col-md-6{
+                width: 100%;
+            }
+
+           
+        }
+    }
 }

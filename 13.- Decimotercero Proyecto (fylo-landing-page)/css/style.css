@@ -15,6 +15,17 @@
     header .row .col-md-7 {
       order: 1; }
     header .row .col-md-5, header .row .col-md-7 {
+      width: 100%; }
+  main .row {
+    flex-direction: column; }
+    main .row .mainlogo {
+      order: 1; }
+    main .row .texto {
+      order: 2;
+      align-items: center; }
+      main .row .texto h1, main .row .texto .h1 {
+        text-align: center; }
+    main .row .col-md-6 {
       width: 100%; } }
 
 * {
@@ -34,6 +45,55 @@ header .card .form .btn {
   font-weight: 700 !important;
   font-size: 85%; }
 
+main .links a {
+  font-size: 98%;
+  color: #3c9f8f !important; }
+
+main .links img {
+  width: 10%; }
+
+main .testimonials .text .title {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700; }
+
+main .testimonials .text .subtitle {
+  opacity: 0.75;
+  font-size: 10px; }
+
+.card {
+  border: none !important;
+  margin-bottom: 5rem; }
+  .card .row .col-md-6 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .card .row .col-md-6 h1, .card .row .col-md-6 .h1 {
+      margin-bottom: 2rem; }
+    .card .row .col-md-6 .mainlogo {
+      width: 90%; }
+    .card .row .col-md-6 .links {
+      border-bottom: 1px solid #3c9f8f;
+      width: 26%;
+      margin-bottom: 2rem; }
+      .card .row .col-md-6 .links a {
+        text-decoration: none; }
+    .card .row .col-md-6 .carta {
+      width: 56%;
+      padding: 1rem; }
+    .card .row .col-md-6 .testimonials {
+      display: flex;
+      align-items: center; }
+      .card .row .col-md-6 .testimonials .testimonial {
+        height: 10%;
+        width: 13%; }
+      .card .row .col-md-6 .testimonials .text {
+        display: flex;
+        flex-direction: column; }
+        .card .row .col-md-6 .testimonials .text p {
+          margin-left: 1rem;
+          margin-bottom: 0; }
+
 nav {
   display: flex;
   flex-direction: row;
@@ -48,31 +108,33 @@ nav {
     nav .options p:not(:last-child) {
       padding-right: 3rem; }
 
-header .card {
-  padding: 4rem;
-  border: none; }
-  header .card .row .col-md-5 {
-    padding-right: 1.5rem;
-    padding-top: 6rem; }
-  header .card .row .col-md-7 {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header .card .row .col-md-7 .headerlogo {
-      padding-left: 10%;
-      width: 90%; }
-  header .card .row .form {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    height: 3rem; }
-    header .card .row .form .input {
-      width: 60%;
-      margin-right: 1rem; }
-    header .card .row .form .input::placeholder {
-      padding: 1.5rem; }
-    header .card .row .form .btn {
-      width: calc(100% - 60% - 1rem); }
+header {
+  margin-bottom: 10rem; }
+  header .card {
+    padding: 4rem;
+    border: none; }
+    header .card .row .col-md-5 {
+      padding-right: 1.5rem;
+      padding-top: 6rem; }
+    header .card .row .col-md-7 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .card .row .col-md-7 .headerlogo {
+        padding-left: 10%;
+        width: 90%; }
+    header .card .row .form {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      height: 3rem; }
+      header .card .row .form .input {
+        width: 60%;
+        margin-right: 1rem; }
+      header .card .row .form .input::placeholder {
+        padding: 1.5rem; }
+      header .card .row .form .btn {
+        width: calc(100% - 60% - 1rem); }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
