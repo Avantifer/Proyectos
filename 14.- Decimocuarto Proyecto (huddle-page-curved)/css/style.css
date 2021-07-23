@@ -1,15 +1,18 @@
 @import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
 @media (max-width: 993px) {
-  header {
-    flex-direction: column !important; }
-    header .text, header img {
-      width: 100% !important;
-      text-align: center; }
-    header .text {
-      padding-left: 5rem; }
-    header .btn {
-      width: 80% !important;
-      align-self: center; } }
+  main .card {
+    padding-bottom: 3rem; }
+    main .card .row {
+      flex-direction: column !important; }
+      main .card .row .col-5 {
+        order: 1;
+        margin-bottom: 4rem; }
+      main .card .row .col-7 {
+        order: 2;
+        text-align: center;
+        padding: 0 4rem; }
+      main .card .row .col-7, main .card .row .col-5 {
+        width: 100%; } }
 
 * {
   padding: 0;
@@ -30,6 +33,34 @@ header .text h1, header .text .h1 {
 header .btn {
   color: white; }
 
+main .data .col h1, main .data .col .h1 {
+  font-size: 4rem; }
+
+main .data .col p {
+  opacity: 0.75; }
+
+.data {
+  display: flex;
+  flex-direction: row; }
+  .data .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .data .col img {
+      padding-right: 7rem; }
+
+.card {
+  border: none !important;
+  margin: 8rem; }
+  .card .col-7 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 10rem; }
+  .card-image {
+    width: 100%; }
+
 nav {
   display: flex;
   flex-wrap: nowrap;
@@ -43,10 +74,12 @@ nav {
 
 header {
   padding-top: 3rem;
-  margin-bottom: 14rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
   header img {
     width: 56%;
     transform: translateY(2rem); }
@@ -55,16 +88,21 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding-right: 5.5rem;
-    width: 44%; }
+    align-items: center;
+    padding-left: 5rem; }
+    header .text p {
+      width: 40%; }
     header .text h1, header .text .h1, header .text p {
       padding-bottom: 2rem; }
     header .text .btn {
       background-color: #ff52bf;
-      width: 55%; }
+      width: 25%;
+      align-self: center; }
       header .text .btn:hover {
         color: white;
         background-color: #ff8fd8; }
+  header .text, header img {
+    text-align: center; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)

@@ -1,10 +1,12 @@
 header{
     padding-top: 3rem;
-    margin-bottom: 14rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
     img{
         width: 56%;
         transform: translateY(2rem);
@@ -16,8 +18,12 @@ header{
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        padding-right: 5.5rem;
-        width: 44%;
+        align-items: center;
+        padding-left: 5rem;
+
+        p{
+            width: 40%;
+        }
 
         h1, p{
             padding-bottom: 2rem;
@@ -25,12 +31,17 @@ header{
 
         .btn{
             background-color: $color-pink;
-            width: 55%;
+            width: 25%;
+            align-self: center;
 
             &:hover{
                 color: $color-white;
                 background-color: $color-light-pink;
             }
         }
+    }
+
+    .text, img{
+        text-align: center;
     }
 }

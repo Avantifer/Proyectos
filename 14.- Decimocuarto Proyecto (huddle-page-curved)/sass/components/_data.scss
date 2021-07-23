@@ -1,0 +1,14 @@
+.data{
+    display: flex;
+    flex-direction: row;
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            padding-right: 7rem;
+        }
+    }
+}

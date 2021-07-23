@@ -16,3 +16,17 @@ header{
         color: $color-white;
     }
 }
+
+main{
+    .data{
+
+        .col{
+            h1{
+                font-size: 4rem;
+            }
+            p{
+                opacity: 0.75;
+            }
+        }
+    }
+}

@@ -1,20 +1,28 @@
 @media (max-width: 993px){
-    header{
+    
+    main{
 
-        flex-direction: column !important;
+        .card{
+            padding-bottom: 3rem;
 
-        .text, img{
-            width: 100% !important;
-            text-align: center;
-        }
+            .row{
+                flex-direction: column !important;
 
-        .text{
-            padding-left: 5rem;
-        }
+                .col-5{
+                    order: 1;
+                    margin-bottom: 4rem;
+                }
 
-        .btn{
-            width: 80% !important;
-            align-self: center;
+                .col-7{
+                    order: 2;
+                    text-align: center;
+                    padding: 0 4rem;
+                }
+                
+                .col-7, .col-5{
+                    width: 100%;
+                }
+            }
         }
     }
 }
