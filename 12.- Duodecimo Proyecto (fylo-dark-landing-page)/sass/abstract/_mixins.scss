@@ -52,9 +52,52 @@
         &-form{
             flex-direction: column !important;
 
+            .btn, .input{
+                width: 80% !important;
+            }
+
             .btn{
                 margin-top: 2rem;
                 padding: 0.7rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    footer{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+
+        .row{
+            flex-direction: column !important;
+
+            .col-4, .col-3, .col-2{
+                width: 90%;
+            }
+
+            .col-3-1{
+                align-items: flex-start !important;
+                
+                .phone{
+                    transform: translateX(0) !important;
+                }
+            }
+
+            .col-3-2{
+                flex-direction: column !important;
+
+                ul{
+                    padding-left: 0;
+                }
+
+                .line2{
+                    margin-top: 2rem;
+                }
+            }
+
+            .col-2{
+                justify-content: center;
             }
         }
     }

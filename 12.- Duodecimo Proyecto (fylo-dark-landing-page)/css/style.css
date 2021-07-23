@@ -30,9 +30,32 @@
     transform: translateX(13%) !important; }
     .prefooter-form {
       flex-direction: column !important; }
+      .prefooter-form .btn, .prefooter-form .input {
+        width: 80% !important; }
       .prefooter-form .btn {
         margin-top: 2rem;
         padding: 0.7rem !important; } }
+
+@media (max-width: 991px) {
+  footer {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important; }
+    footer .row {
+      flex-direction: column !important; }
+      footer .row .col-4, footer .row .col-3, footer .row .col-2 {
+        width: 90%; }
+      footer .row .col-3-1 {
+        align-items: flex-start !important; }
+        footer .row .col-3-1 .phone {
+          transform: translateX(0) !important; }
+      footer .row .col-3-2 {
+        flex-direction: column !important; }
+        footer .row .col-3-2 ul {
+          padding-left: 0; }
+        footer .row .col-3-2 .line2 {
+          margin-top: 2rem; }
+      footer .row .col-2 {
+        justify-content: center; } }
 
 * {
   margin: 0;
@@ -154,14 +177,15 @@ main .reviews .review-simplecard-introduction .text .extra {
     align-content: center;
     justify-content: flex-end; }
     .prefooter-form .input {
-      width: 66%;
+      width: 61%;
       padding: 0.7rem; }
     .prefooter-form .input::placeholder {
       padding: 0.7rem; }
     .prefooter-form .btn {
       margin-left: 0.7rem;
       padding: 0 1.5rem;
-      background-color: #65e2d9; }
+      background-color: #65e2d9;
+      width: 33%; }
 
 nav {
   background-color: #1c2431;
@@ -197,6 +221,51 @@ header {
     background-color: #339ecc;
     width: 33%;
     padding: 0.75rem 0; }
+
+footer {
+  padding: 10rem 8rem 3rem 8rem;
+  background-color: #0b1523; }
+  footer .row .col-4 .location {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transform: translateY(-2rem); }
+    footer .row .col-4 .location img {
+      padding: 0.2rem 1rem 0 0; }
+  footer .row .col-3-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    footer .row .col-3-1 .phone, footer .row .col-3-1 .email {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      footer .row .col-3-1 .phone img, footer .row .col-3-1 .email img {
+        padding-right: 1rem;
+        transform: translateY(-0.4rem); }
+    footer .row .col-3-1 .phone {
+      transform: translateX(-1.3rem); }
+  footer .row .col-3-2 {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2rem; }
+    footer .row .col-3-2 ul {
+      list-style-type: none; }
+      footer .row .col-3-2 ul li {
+        margin-bottom: 1rem; }
+  footer .row .col-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer .row .col-2 .icon {
+      padding-left: 1.5rem; }
+      footer .row .col-2 .icon i {
+        border: 1px solid white;
+        padding: 0.5rem;
+        border-radius: 50%; }
+      footer .row .col-2 .icon-1 {
+        padding: 0.5rem 0.7rem !important; }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
