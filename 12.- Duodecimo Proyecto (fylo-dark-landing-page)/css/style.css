@@ -20,9 +20,19 @@
 @media (max-width: 834px) {
   .review {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr !important;
     gap: 3em; } }
+
+@media (max-width: 913px) {
+  .prefooter {
+    width: 80% !important;
+    transform: translateX(13%) !important; }
+    .prefooter-form {
+      flex-direction: column !important; }
+      .prefooter-form .btn {
+        margin-top: 2rem;
+        padding: 0.7rem !important; } }
 
 * {
   margin: 0;
@@ -123,6 +133,35 @@ main .reviews .review-simplecard-introduction .text .extra {
             font-size: 11px; }
           .reviews .review-simplecard-introduction .text p {
             margin-bottom: 0.1rem; }
+
+.prefooter {
+  background-color: #1c2431;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transform: translateX(35%);
+  padding: 2rem 3rem; }
+  .prefooter-text {
+    text-align: center; }
+    .prefooter-text p {
+      margin: 0 4rem; }
+  .prefooter-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end; }
+    .prefooter-form .input {
+      width: 66%;
+      padding: 0.7rem; }
+    .prefooter-form .input::placeholder {
+      padding: 0.7rem; }
+    .prefooter-form .btn {
+      margin-left: 0.7rem;
+      padding: 0 1.5rem;
+      background-color: #65e2d9; }
 
 nav {
   background-color: #1c2431;

@@ -38,8 +38,24 @@
 @media (max-width: 834px){
     .review{
         display: grid;
-        grid-template-columns: 1fr ; 
-        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr !important; 
+        grid-template-rows: 1fr 1fr 1fr !important; 
         gap: 3em;
+    }
+}
+
+@media (max-width: 913px){
+    .prefooter{
+        width: 80% !important;
+        transform: translateX(13%) !important;
+
+        &-form{
+            flex-direction: column !important;
+
+            .btn{
+                margin-top: 2rem;
+                padding: 0.7rem !important;
+            }
+        }
     }
 }
