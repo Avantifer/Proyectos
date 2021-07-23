@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn{
+        color: $color-pink;
+        border: 2px solid;
+
+        &:hover{
+            color: $color-light-pink;
+        }
+    }
+}

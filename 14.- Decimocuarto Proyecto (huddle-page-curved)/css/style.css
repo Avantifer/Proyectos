@@ -1,10 +1,34 @@
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif !important; }
+  body > * {
+    margin: 3rem; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700 !important; }
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  nav .btn {
+    color: #ff52bf;
+    border: 2px solid; }
+    nav .btn:hover {
+      color: #ff8fd8; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
