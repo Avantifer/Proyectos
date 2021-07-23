@@ -1,0 +1,48 @@
+header{
+
+    .card{
+        padding: 4rem;
+        border: none;
+
+        .row{
+
+            .col-md-5{
+                padding-right: 1.5rem;
+                padding-top: 6rem;
+            }
+
+            .col-md-7{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .headerlogo{
+                    padding-left: 10%;
+                    width: 90%;
+                }
+            }
+            
+
+            .form{
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                height: 3rem;
+
+                .input{
+                    width: 60%;
+                    margin-right: 1rem;
+                }
+
+                .input::placeholder{
+                    padding: 1.5rem;
+                }
+
+                .btn{
+                    width: calc(100% - 60% - 1rem);
+                }
+            }
+        }
+        
+    }
+}

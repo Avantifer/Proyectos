@@ -1,0 +1,33 @@
+@media (max-width: 991px){
+    header{
+        .row{
+            flex-direction: column;
+
+            .col-md-5{
+                order: 2;
+                text-align: center;
+
+                .form{
+                    flex-direction: column !important;
+                    align-items: center;
+
+                    &>*{
+                        width: 90% !important;
+                    }
+
+                    .input{
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            .col-md-7{
+                order: 1;
+            }
+
+            .col-md-5, .col-md-7{
+                width: 100%;
+            }
+        }
+    }
+}
