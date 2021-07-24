@@ -2,17 +2,27 @@
     display: flex;
     flex-direction: row;
     position: absolute !important;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: 80%;
+    width: auto;
+    height: auto;
     background-color: transparent !important;
     border: none !important;
-     
+    margin-bottom: 5%;
+
+    .col-6{
+        &:last-child{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5rem;
+        }
+    }
+
     .mobile{
-        height: 100%;
-        width: 80% ;
+        height: auto;
+        width: auto;
         background-color: $color-white;
         padding: 1rem;
         border-radius: 2rem;
@@ -21,7 +31,7 @@
             content: "";
             background-color: $color-white;
             width: 20%;
-            height: 10%;
+            height: 5%;
             border-bottom-right-radius: 2rem;
             border-bottom-left-radius: 2rem;
 
@@ -63,7 +73,7 @@
                     display: flex;
                     flex-direction: column;
                     color: $color-white;
-                    
+
                     p{
                         margin: 0 !important;
                     }
@@ -74,6 +84,126 @@
                 margin-left: 10%;
                 color: $color-white;
             }
+        }
+
+        &-body{
+            height: auto;
+            background-color: $color-light-grayish-violet;
+            padding: 0.5rem;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+
+            &-second{
+                align-items: flex-end;
+            }
+
+            &-third{
+                width: auto;
+
+                .circle{
+
+                    i{
+                        color: $color-white;
+                        opacity: 0.75;
+                    }
+                }
+            }
+
+            &-last{
+                margin-bottom: 1rem;
+
+                .input{
+                    height: 3rem;
+    
+                    &::placeholder{
+                        padding: 1rem;
+                    }
+                }
+
+                i{
+                    position: absolute;
+                    top: 89.5%;
+                    left: 40%;
+                }
+            }
+
+            &-first, &-second, &-third{
+                display: flex;
+                flex-direction: column;
+                margin: 0.5rem;
+            }
+
+            .text-type-1{
+                width: 60%;
+                height: auto;
+                background-color: $color-dark-grayish-violet;
+            }
+
+            .text-type-2{
+                background-color: $color-white;
+                margin-top: 0.5rem;
+                width: 61%;
+
+                &:last-child{
+                    width: auto;
+                }
+            }
+
+            .text-type-3{
+                width: 75%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-image: linear-gradient(to right, $color-light-magenta, $color-light-violet);
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+
+                p{
+                    margin-left: 1rem;
+                }
+
+                h4{
+                    margin-bottom: 0 !important;
+                }
+
+                .price-1{
+                    margin-left: 2rem;
+                }
+
+                .price-2{
+                    margin-left: 3.5rem;
+                }
+            }
+
+            .text-type-1, .text-type-2, .text-type-3{
+                padding: 0.5rem;
+                border-radius: 1rem;
+
+                &:first-child(){
+                    margin-bottom: 1rem;
+                }
+
+                p{
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .dogs{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-top: 1rem;
+
+                img{
+                    width: 17%;
+
+                    &:not(:last-child){
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+
+            
         }
     }
 }

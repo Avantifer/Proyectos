@@ -2,22 +2,22 @@
 
     //Text
 
-$color-pale-violet: hsl(276, 100%, 81%); // sub-heading at the top of the app UI
-$color-moderate-violet : hsl(276, 55%, 52%); // chat on the left
-$color-desaturated-dark-violet: hsl(271, 15%, 43%); // chat on the right
-$color-grayish-Blue: hsl(206, 6%, 79%); // placeholder text
-$color-very-dark-desaturated-violet: hsl(271, 36%, 24%); // main heading
-$color-dark-grayish-violet: hsl(270, 7%, 64%); // paragraph
+$color-pale-violet: rgb(216, 158, 255); // sub-heading at the top of the app UI
+$color-moderate-violet : rgb(146, 65, 200); // chat on the left
+$color-desaturated-dark-violet: rgb(110, 93, 126); // chat on the right
+$color-grayish-Blue: rgb(198, 202, 205); // placeholder text
+$color-very-dark-desaturated-violet: rgb(62, 39, 83); // main heading
+$color-dark-grayish-violet: rgb(234, 234, 235); // paragraph
 
     // Gradients
 
-$color-light-magenta: hsl(293, 100%, 63%);
-$color-light-violet: hsl(264, 100%, 61%);
+$color-light-magenta: rgb(233, 66, 255);
+$color-light-violet: rgb(136, 56, 255);
 
-$color-white: hsl(0, 0%, 100%);
-$color-light-grayish-violet: hsl(270, 20%, 96%); // app background
-$color-very-dark-desaturated-violet: hsl(271, 36%, 24%); // submit button background
-$color-very-light-magenta: hsl(289, 100%, 72%); // radio button outline
+$color-white: rgb(255, 255, 255);
+$color-light-grayish-violet: rgb(245, 243, 247); // app background
+$color-very-dark-desaturated-violet: rgb(62, 39, 83); // submit button background
+$color-very-light-magenta: rgb(229, 112, 255); // radio button outline
 
 //FONTS
 

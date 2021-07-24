@@ -18,4 +18,30 @@
             }
         }
     }
+
+    &-body{
+
+        .text-type-1{
+            
+            p{
+                color: $color-moderate-violet;
+            }
+        }
+
+        .text-type-3{
+            color: $color-white;
+
+            p{
+                opacity: 0.75;
+            }
+        }
+
+        .text-type-1, .text-type-2, .text-type-3{
+            
+            p{
+                font-size: 12px;
+            }
+        }
+
+    }
 }

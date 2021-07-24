@@ -1,25 +1,28 @@
-@media (max-width: 576px) {
+@media (max-width: 1201px) {
     
     .background-img{
         width: 80% !important;
         transform: translateX(-14rem) !important;
     }
 
-}
-
-@media (max-width: 1201px) {
-    
     .carta{
         flex-direction: column !important;
-        width: 80% !important;
+        top: 107% !important;
 
         .col-6{
             width: 90%;
             height: 35rem;
+
+            &:last-child{
+                margin-left: 0 !important;
+            }
         }
 
+        .texto{
+            text-align: center;
+        }
+        
         .mobile{
-            width: 90% !important;
 
             &::after{
                 content: "";
@@ -28,8 +31,13 @@
     
                 position: absolute;
                 top: 0;
-                left: 15% !important;
+                left: 20% !important;
                 z-index: 0;
+            }
+
+            i{
+                top: 57.8% !important;
+                left: 78% !important;
             }
         }
     }
