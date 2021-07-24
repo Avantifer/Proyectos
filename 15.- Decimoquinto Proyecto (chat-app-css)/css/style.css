@@ -12,7 +12,11 @@
       .carta .col-6:last-child {
         margin-left: 0 !important; }
     .carta .texto {
-      text-align: center; }
+      margin-top: 5rem;
+      text-align: center;
+      align-items: center; }
+      .carta .texto > * {
+        width: 50%; }
     .carta .mobile::after {
       content: "";
       background-color: white;
@@ -55,6 +59,12 @@ html, body {
 
 .mobile-body .text-type-1 p, .mobile-body .text-type-2 p, .mobile-body .text-type-3 p {
   font-size: 12px; }
+
+.texto h2, .texto .h2 {
+  color: #3e2753; }
+
+.texto p {
+  opacity: 0.5; }
 
 .carta {
   display: flex;
