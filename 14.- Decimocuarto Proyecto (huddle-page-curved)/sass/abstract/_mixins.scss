@@ -37,4 +37,25 @@
             }
         }
     }
+
+    footer{
+
+        .row{
+            flex-direction: column;
+            padding: 0 3rem !important;
+
+            .intro{
+                order: 2;
+            }
+
+            .newsletter{
+                order: 1;
+                margin-bottom: 2rem;
+            }
+
+            &>*{
+                width: 100%;
+            }
+        }
+    }
 }
