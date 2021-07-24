@@ -1,7 +1,26 @@
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
 @media (max-width: 576px) {
   .background-img {
     width: 80% !important;
     transform: translateX(-14rem) !important; } }
+
+@media (max-width: 1201px) {
+  .carta {
+    flex-direction: column !important;
+    width: 80% !important; }
+    .carta .col-6 {
+      width: 90%;
+      height: 35rem; }
+    .carta .mobile {
+      width: 90% !important; }
+      .carta .mobile::after {
+        content: "";
+        background-color: white;
+        width: 40% !important;
+        position: absolute;
+        top: 0;
+        left: 15% !important;
+        z-index: 0; } }
 
 * {
   margin: 0;
@@ -15,7 +34,76 @@ body {
 html, body {
   height: 100%; }
 
+.mobile-topside-intro-text-title {
+  font-weight: 700 !important;
+  font-size: 18px; }
+
+.mobile-topside-intro-text-paragraph {
+  opacity: 0.5;
+  font-size: 14px; }
+
+.carta {
+  display: flex;
+  flex-direction: row;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80%;
+  background-color: transparent !important;
+  border: none !important; }
+  .carta .mobile {
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem; }
+    .carta .mobile::after {
+      content: "";
+      background-color: white;
+      width: 20%;
+      height: 10%;
+      border-bottom-right-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      position: absolute;
+      top: 0;
+      left: 10%;
+      z-index: 0; }
+    .carta .mobile-topside {
+      background-image: linear-gradient(to left, #e942ff, #8838ff);
+      height: 7.5rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 8%; }
+      .carta .mobile-topside-arrow {
+        margin: 0 4%;
+        color: white; }
+      .carta .mobile-topside-intro {
+        display: flex;
+        flex-direction: row;
+        width: 70%; }
+        .carta .mobile-topside-intro-avatar {
+          width: 3rem;
+          height: 3rem;
+          margin: 0 5%; }
+        .carta .mobile-topside-intro-text {
+          display: flex;
+          flex-direction: column;
+          color: white; }
+          .carta .mobile-topside-intro-text p {
+            margin: 0 !important; }
+      .carta .mobile-topside-hamburguer {
+        margin-left: 10%;
+        color: white; }
+
 .background-img {
+  position: absolute;
   height: 90%;
   width: 35%;
   background-image: linear-gradient(to bottom, #e942ff, #8838ff);

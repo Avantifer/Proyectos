@@ -1,0 +1,21 @@
+.mobile{
+    
+    &-topside{
+
+        &-intro{
+
+            &-text{
+
+                &-title{
+                    font-weight: 700 !important;
+                    font-size: 18px;
+                }
+
+                &-paragraph{
+                    opacity: 0.5;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

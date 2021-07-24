@@ -4,4 +4,33 @@
         width: 80% !important;
         transform: translateX(-14rem) !important;
     }
+
 }
+
+@media (max-width: 1201px) {
+    
+    .carta{
+        flex-direction: column !important;
+        width: 80% !important;
+
+        .col-6{
+            width: 90%;
+            height: 35rem;
+        }
+
+        .mobile{
+            width: 90% !important;
+
+            &::after{
+                content: "";
+                background-color: white;
+                width: 40% !important;
+    
+                position: absolute;
+                top: 0;
+                left: 15% !important;
+                z-index: 0;
+            }
+        }
+    }
+} 
