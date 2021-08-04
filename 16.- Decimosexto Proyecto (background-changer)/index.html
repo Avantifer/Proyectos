@@ -4,11 +4,44 @@
         <meta charset="utf-8">
         <title>Background Changer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div id="background">
+        </div>
+        <div id="main">
+            <select id="dropdown">
+                <option value="anything">Choose the background</option>
+                <option value="forest">Forest</option>
+                <option value="ocean">Ocean</option>
+                <option value="road">Road</option>
+                <option value="thunderstorm">Thunderstorm</option>
+            </select>
+            <div id="filters">
+                <label>Blur</label>
+                <input type="range" min="0" max="10" value="0" step="1" onchange="applyFilter()"  data-filter="blur" data-scale="px">
+                <label>Brightness</label>
+                <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="brightness" data-scale="%">
+                <label>Contrast</label>
+                <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="contrast" data-scale="%">
+                <label>Grayscale</label>
+                <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="grayscale" data-scale="%">
+                <label>Hue Rotate</label>
+                <input type="range" min="0" max="360" value="0" step="1" onchange="applyFilter()" data-filter="hue-Rotate" data-scale="deg">
+                <label>Invert</label>
+                <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="invert" data-scale="%">
+                <label>Opacity</label>
+                <input type="range" min="0" max="100" value="100" step="1" onchange="applyFilter()" data-filter="opacity" data-scale="%">
+                <label>Saturate</label>
+                <input type="range" min="0" max="100" value="100" step="1" onchange="applyFilter()" data-filter="saturate" data-scale="%">
+                <label>Sepia</label>
+                <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="sepia" data-scale="%">
+            </div>
+            <span id="title">Change the background</span>
+        </div>
 
-        
         <script src="js/app.js" async defer></script>
     </body>
 </html>

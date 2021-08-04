@@ -1,0 +1,134 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "MonteCarlo", sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+#background{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'dropdown title'
+                         'filters title';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main, #background{
+    width: 100vw;
+    height: 100vh;
+}
+
+#dropdown{
+    grid-area: dropdown;
+    width: 70%;
+    height: 2rem;
+    margin-top: 2rem;
+    place-self: center;
+    z-index: 1;
+    position: absolute;
+}
+
+#filters{
+    grid-area: filters;
+    width: 60%;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+}
+
+#filters label{
+    align-self: center;
+}
+
+#title{
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+    font-size: 90px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+}
+
+.anything #title{
+    opacity: 1;
+}
+
+.anything #title, #title{
+    border-right: solid 4px rgba(255, 0, 0, 0.75);
+ 
+    animation: animated-text 2s steps(20) 1s 1 normal both,
+               animated-cursor 600ms steps(20) infinite;
+}
+
+.forest{
+    background-image: url(/img/forest.jpg);
+}
+
+.ocean{
+    background-image: url(/img/ocean.jpg);
+}
+
+.road{
+    background-image: url(/img/road.jpg);
+
+}
+
+.thunderstorm{
+    background-image: url(/img/thunderstorm.jpg);
+
+}
+
+.forest, .ocean, .road, .thunderstorm{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.forest-title, .ocean-title, .road-title, .thunderstorm-title{
+    opacity: 0;
+}
+
+
+@keyframes animated-text{
+    from{
+        width: 0;
+    }
+    to{
+        width: 57%;
+    }
+}
+
+@keyframes animated-cursor{
+    from{
+        border-right-color: rgba(255, 0, 0, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
