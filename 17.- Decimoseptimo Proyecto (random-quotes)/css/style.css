@@ -1,0 +1,68 @@
+html{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width: 50%;
+    padding: 3rem 5rem;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#block-quote{
+    border: 1px solid black;
+    padding: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+main, #block-quote{
+    border-radius: 1rem;
+}
+
+#title{
+    font-family: "Style Script", sans-serif;
+    font-size: 50px;
+}
+
+#quote {
+    font-family: "Kiwi Maru", sans-serif;
+    font-size: 35px;
+}
+
+#author{
+    font-family: "Zen Dots", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+#generator{
+    width: 30%;
+    height: 3rem;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
