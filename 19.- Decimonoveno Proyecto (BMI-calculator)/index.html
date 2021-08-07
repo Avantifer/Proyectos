@@ -4,10 +4,44 @@
         <meta charset="utf-8">
         <title>BMI Calculator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <main>
+            <h1 id="title">BMI Calculator</h1>
+            <div id="bascule">
+                <div id="top-side">
+                    <div id="screen">
+                        <div id="typeBMI">Enter Measurements</div>
+                        <div id="result">&nbsp;</div>
+                        <div id="draw">
+                            <div id="needle"></div>
+                            <div id="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bot-side">
+                    <div id="title-requisites">
+                        <p>Height</p>
+                        <p>Weight</p>
+                    </div>
+                    <div id="requisites">
+                        <label>
+                            <input type="number" class="input" id="height">
+                            cm
+                        </label>
+                        <label>
+                            <input type="number" class="input" id="weight">
+                            kg
+                        </label>
+                    </div>
+                    <button id="button" onclick="calculate()">Calculate</button>
+                </div>
+            </div>
+        </main>
         <script src="js/app.js" async defer></script>
     </body>
 </html>
