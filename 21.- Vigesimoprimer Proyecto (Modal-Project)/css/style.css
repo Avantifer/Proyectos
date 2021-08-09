@@ -1,0 +1,43 @@
+html{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+}
+
+#modal-container{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal{
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    padding: 2rem;
+}
+
+#modal-close{
+    cursor: pointer;
+    font-size: xx-large;
+    align-self: flex-end;
+    width: 1.2rem;
+}
+
+#modal-content{
+    text-align: center;
+}

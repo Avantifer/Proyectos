@@ -7,7 +7,16 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <div id="modal-container" onclick="modal()">
+            <div id="modal" onclick="event.stopPropagation()">
+                <div id="modal-close" onclick="modal()">&times;</div>
+                <div id="modal-content">
+                    <h1>Its a Modal</h1>
+                    <p>You can put anything else here</p>
+                </div>
+            </div>
+        </div>
+        <button id="button" onclick="modal()">Get a modal</button>
         <script src="js/app.js" async defer></script>
     </body>
 </html>
