@@ -1,0 +1,45 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title{
+    margin: 4rem 0 2rem 0;
+}
+
+.textarea{
+    width: 25%;
+    text-indent: 0.3rem;
+    resize: none;
+    padding: 0.5rem;
+}
+
+p, .textarea{
+    margin-bottom: 1rem;
+}
+
+#words{
+    margin-bottom: 2rem;
+    padding: 0.3rem;
+}
