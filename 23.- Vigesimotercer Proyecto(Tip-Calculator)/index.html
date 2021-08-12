@@ -4,10 +4,43 @@
         <meta charset="utf-8">
         <title>Tip Calculator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <main>
+            <div class="tip-container">
+                <div class="top-side">
+                    <h1 class="title">Tip Calculator</h1>
+                </div>
+                <div class="mid-side">
+                    <h4>Enter Total Bill</h4>
+                    <label>
+                        <input type="number" class="totalbill" placeholder="000">
+                        &euro;
+                    </label>
+                    <h4>Choose Your Tip</h4>
+                    <select id="dropdown">
+                        <option value="0">Select from here</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="30">30%</option>
+                    </select>
+                    <h4>Split the bill into</h4>
+                    <label>
+                        <input type="number" class="split" placeholder="0">
+                    </label>
+                    <button class="calculate-button" onclick="calculate()">Calculate</button>
+                </div>
+                <div class="bot-side">
+                    <h3>Total Per Person</h3>
+                    <h2 id="result">0.00 &euro;</h2>
+                </div>
+            </div>
+        </main>
         <script src="js/app.js"></script>
     </body>
 </html>
