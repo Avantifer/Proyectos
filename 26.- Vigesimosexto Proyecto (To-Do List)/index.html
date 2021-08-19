@@ -4,10 +4,23 @@
         <meta charset="utf-8">
         <title>To-Do List</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        
+    <body class="black">
+        <img src="img/bg-desktop-dark.jpg" alt="background-image" class="background">
+        <main>
+            <div class="top-side">
+                <h1 class="title">TODO</h1>
+                <img src="img/icon-sun.svg" alt="Sun icon" class="icon-sun">
+            </div>
+            <div class="entry black">
+                <input type="checkbox" class="entry-checkbox black">
+                <input type="text" class="entry-input black" placeholder="Create a new todo...">
+            </div>
+            <div class="list"></div>
+        </main>
         <script src="js/app.js"></script>
     </body>
 </html>
