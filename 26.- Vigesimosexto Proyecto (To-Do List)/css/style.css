@@ -20,18 +20,22 @@ body {
 }
 
 .black{
-    background-color: rgb(24, 24, 36);
+    background-color: rgb(37, 39, 60);
     color: rgba(255, 255, 255, 0.8);
 }
 
-.white{
+.black-body{
+    background-color: rgb(24, 24, 36);
+}
+
+.white, .white-body{
     background-color: rgb(255, 255, 255);
     color: rgb(24, 24, 36);
 }
 
 .background {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     position: absolute;
     z-index: -1;
 }
@@ -48,7 +52,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .title {
@@ -57,7 +61,6 @@ main {
 }
 
 .entry {
-    color: rgb(150, 142, 142);
     width: calc(100% - 2rem);
     padding: 1rem;
     border-radius: 0.5rem;
@@ -81,13 +84,79 @@ main {
 	border: 1px solid rgb(173, 184, 192);
 }
 
+.entry-checkbox:hover{
+    cursor: pointer;
+}
+
 .entry-input {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     outline: none;
     border: none;
+    font-size: 16px;
 }
 
 .entry-input::-webkit-input-placeholder {
     font-family: 'Roboto', sans-serif;
+}
+
+.list{
+    margin-top: 1.5rem;
+}
+
+.list .entry{
+    border-radius: 0;
+    border-bottom: 1px solid rgb(55, 57, 78);
+}
+
+.list .entry:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item .entry-input:hover{
+    cursor: pointer;
+}
+
+.list .entry-input:hover + .cross-icon{
+    cursor: pointer;
+    display: block;
+}
+
+.cross-icon{
+    display: none;
+}
+
+.cross-icon:hover{
+    display: block;
+    cursor: pointer;
+}
+
+.information{
+    font-size: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(95, 97, 122);
+}
+
+.information .status{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.information li:not(:last-of-type){
+    margin-right: 0.5rem;
+}
+
+.information li:hover, .information .clear:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.completed{
+    text-decoration: line-through;
 }
