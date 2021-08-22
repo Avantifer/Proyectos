@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 *,
@@ -9,8 +10,9 @@ html{
     margin: 0;
 }
 
-body{
+html, body{
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 header, main{
@@ -47,6 +49,7 @@ header .container-input{
 }
 
 main{
+    height: 100%;
     background-color: rgb(245, 245, 245);
 }
 
@@ -66,16 +69,47 @@ main .card-container{
     padding: 1.5rem;
     width: 100%;
     color: rgb(255, 255, 255);
-    background: linear-gradient(to bottom, rgb(255, 188, 117) 40%, rgb(255, 179, 150), rgb(252, 175, 176) );
+    background: linear-gradient(to bottom, rgb(68, 238, 196) 20%, rgb(114, 192, 226) );
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
+}
+
+.card-container .clear{
+    background: linear-gradient(to bottom, rgb(68, 238, 196) 20%, rgb(114, 192, 226) );
+}
+
+.card-container .snowy{
+    background: linear-gradient(to bottom, rgb(195, 225, 246) 20%, rgb(114, 192, 226) );
+}
+.card-container .hazy {
+    background: linear-gradient(to bottom, rgb(254, 129, 129) 20%, rgb(114, 192, 226) );
+}
+
+.card-container .cloudy{
+    background: linear-gradient(to bottom, rgb(255, 118, 187) 20%, rgb(95, 195, 228));
+}
+
+.card-container .drizzling{
+    background: linear-gradient(to bottom, rgb(209, 129, 252) 20%, rgb(114, 192, 226) );
+}
+
+.card-container .raining {
+    background: linear-gradient(to bottom, rgb(138, 125, 255) 20%, rgb(95, 195, 228));
+}
+
+.card-container .stormy {
+    background: linear-gradient(to bottom, rgb(72, 78, 161) 20%, rgb(95, 195, 228));
+}
+
+.card-container .card:hover{
+    background: linear-gradient(to bottom, rgb(255, 188, 117) 20%, rgb(252, 175, 176) );
 }
 
 .card .day{
     font-weight: 500;
 }
-
 
 .card .day, .card .month-day{
     text-transform: uppercase;
@@ -83,6 +117,7 @@ main .card-container{
 
 .card .weather{
     font-size: 18px;
+    text-transform: capitalize;
 }
 
 .card .weather, .card .temperatures{
