@@ -1,0 +1,128 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main{
+    padding: 2rem;
+}
+
+header .logo{
+    width: 12rem;
+}
+
+header .container-input{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-input .input{
+    height: 2.7rem;
+    width: 14rem;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    padding-left: 1rem;
+}
+
+.container-input .input:focus{
+    outline: none;
+}
+
+.container-input .submit{
+    background-color: rgb(255, 114, 130);
+    color: rgb(255, 255, 255);
+    border: none;
+    text-transform: uppercase;
+    padding: 0 0.7rem;
+}
+
+main{
+    background-color: rgb(245, 245, 245);
+}
+
+main .title{
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+main .card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.card-container .card{
+    padding: 1.5rem;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgb(255, 188, 117) 40%, rgb(255, 179, 150), rgb(252, 175, 176) );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .day{
+    font-weight: 500;
+}
+
+
+.card .day, .card .month-day{
+    text-transform: uppercase;
+}
+
+.card .weather{
+    font-size: 18px;
+}
+
+.card .weather, .card .temperatures{
+    margin-bottom: 2rem;
+}
+
+.card .temperatures{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card .month-day, .card .weather, .humidity, .wind{
+    font-weight: 300;
+}
+
+.temperatures .number-temperature{
+    font-weight: 400;
+}
+
+.temperatures .high-temperature, .temperatures .low-temperature{
+    display: flex;
+    flex-direction: column;
+}
+
+.temperatures .line{
+    background-color: rgb(255, 188, 172);
+    width: 1rem;
+    height: 0.1rem;
+}
+
+@media (max-width:769px) {
+    main .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container .card{
+        width: 35%;
+    }
+}
