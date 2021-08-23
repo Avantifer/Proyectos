@@ -15,7 +15,7 @@ document.querySelector('.submit').addEventListener('click', () =>{
 async function getLatLong() {
   var country = document.querySelector('.input').value;
   country = country.replace(" ", "%20");
-  const url = "https://api.opencagedata.com/geocode/v1/json?key=" + apiKey1 + "&q=+country";
+  const url = "https://api.opencagedata.com/geocode/v1/json?key=" + apiKey1 + "&q=+" + country;
   const response = await fetch(url, requestOptions)
   var fulldata = await response.json();
   var data = fulldata.results[0];
