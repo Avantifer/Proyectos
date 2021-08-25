@@ -1,0 +1,181 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 225, 221);
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.button:hover{
+    background-color: rgb(153, 227, 226);
+    cursor: pointer;
+}
+
+.nav, .nav .left, .nav .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav{
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    color: rgb(170, 170, 175);
+    font-weight: 500;
+}
+
+.nav .left *:not(:last-child){
+    margin-right: 2rem;
+}
+
+.nav p:hover{
+    color: rgb(0, 0, 0);
+}
+
+.nav .right *:first-child{
+    margin-right: 2rem;
+}
+
+.nav .left *, .nav .right *{
+    cursor: pointer;
+}
+
+.nav .button{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem;
+    margin-bottom: 2rem;
+}
+
+.left .title{
+    color: rgb(52, 48, 62);
+    font-size: 5rem;
+}
+
+.left p{
+    color: rgb(160, 160, 165);
+    font-size: 1.7rem;
+}
+
+.left .button{
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+
+.header .right{
+    position: relative;
+}
+
+.right .headerimage{
+    transform: translateX(13rem);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem 4rem;
+}
+
+.main .input-container{
+    background-image: url(/img/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(58, 48, 83);
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+}
+
+.input-container .input{
+    width: 85%;
+    height: 92%;
+    border-radius: 0.5rem;
+    margin-right: 1.5rem;
+    padding-left: 1rem;
+}
+
+.input-container .input:focus{
+    outline: none;
+}
+
+.input-container .button{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    height: 100%;
+}
+
+.clicked{
+    background-color: rgb(58, 48, 83) !important;
+}
+
+.clicked:hover{
+    background-color: rgb(103, 85, 150) !important;
+}
+
+.linksresults{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: rgb(240, 241, 246);
+}
+
+.linkresult{
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+    width: 90%;
+}
+
+.linkresult .button{
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.linkresult > p:first-child{
+    font-weight: bold;
+}
+
+.linkresult:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.linkresult .right *:first-child{
+    margin-right: 1.5rem;
+}
+
+.linksresults .linkresult, .linkresult .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.linksresults .linkresult{
+    justify-content: space-between;
+}
