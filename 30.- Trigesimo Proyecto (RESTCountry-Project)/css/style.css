@@ -1,0 +1,132 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background-color: rgb(32, 45, 54);
+}
+
+.nav{
+    background-color: rgb(43, 55, 67);
+    padding: 1.5rem;
+}
+
+.nav .title{
+    font-weight: 500;
+}
+
+.header{
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.header .input-container{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.input-container .icon{
+    height: 1.5rem;
+    filter: contrast(0) brightness(100);
+    margin: 0 1rem;
+}
+
+.input-container .input{
+    width: 100%;
+    height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-size: 1rem;
+}
+
+.input-container .input, .input-container .input::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.input-container .input:focus{
+    outline: none;
+}
+
+.header .regions{
+    padding: 1rem;
+    width: 11rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    background-position: left;
+}
+
+.header .regions:focus{
+    outline: none;
+}
+
+.header .input-container, .input-container .input, .header .regions{
+    background-color: rgb(43, 55, 67);
+}
+
+.regions option:first-child{
+    margin-top: 10px;
+}
+
+.countries{
+    margin: 3rem;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 6rem;
+}
+
+.countries .country{
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 55, 67);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 20px rgb(23, 32, 39);
+}
+
+.flag-container .flag{
+    width: 100%;
+    height: 100%;
+}
+
+.country .body{
+    padding-left: 2rem;
+}
+
+.body .title{
+    margin: 2rem 0;
+}
+
+.body span{
+    color: rgb(178, 190, 202);
+}
+
+.body p{
+    margin-top: 0.8rem;
+}
+
+.body p:last-child{
+    margin-bottom: 3rem;
+}
