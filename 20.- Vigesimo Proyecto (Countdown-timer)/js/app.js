@@ -1,5 +1,5 @@
 function diff(){
-    const endYear = new Date("2022-01-01");
+    const endYear = new Date("2023-01-01");
     var today = new Date();
 
     var totalSeconds = (endYear - today) / 1000;
