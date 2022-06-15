@@ -15,11 +15,10 @@ document.querySelector('.submit').addEventListener('click', () =>{
 async function getLatLong() {
   var country = document.querySelector('.input').value;
   country = country.replace(" ", "%20");
-  const url = "https://api.opencagedata.com/geocode/v1/json?key=" + apiKey1 + "&q=+" + country;
+  const url = "https://api.opencagedata.com/geocode/v1/json?key=84b92846fdf04ebd9b58980f60fe8871&q=+" + country;
   const response = await fetch(url, requestOptions)
   var fulldata = await response.json();
   var data = fulldata.results[0];
-
   var name = data.formatted;
   var lat = data.geometry.lat;
   var long = data.geometry.lng;
@@ -32,7 +31,7 @@ async function getLatLong() {
 
 
 async function getInformation(){
-  const url = "https://api.openweathermap.org/data/2.5/onecall?lat="+latitude+"&lon="+longitude+"&units=metric&exclude=minutely,hourly,alerts&appid=" + apiKey2;
+  const url = "https://api.openweathermap.org/data/2.5/onecall?lat="+latitude+"&lon="+longitude+"&units=metric&exclude=minutely,hourly,alerts&appid=a8a51effc76fe5e818b91eafff3b0269";
   const response = await fetch(url, requestOptions)
   var data = await response.json();
   console.log(data);
