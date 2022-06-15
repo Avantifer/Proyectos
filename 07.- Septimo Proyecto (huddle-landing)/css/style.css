@@ -56,7 +56,13 @@ h1, .h1, p {
 i {
   border-radius: 50%;
   border: 1px solid white;
-  padding: 1rem; }
+  display: flex !important;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.25rem; }
 
 .fab {
   color: white !important; }
