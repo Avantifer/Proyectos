@@ -36,14 +36,14 @@ function initArrows() {
     }
 
     const leftArrow = document.createElement('img');
-    leftArrow.src = "../img/arrow-left.png";
+    leftArrow.src = "./img/arrow-left.png";
     leftArrow.classList.add("slider-left");
     leftArrow.addEventListener('click', () => {
       slideLeft();
     });
 
     const rightArrow = document.createElement('img');
-    rightArrow.src = "../img/arrow-right.png";
+    rightArrow.src = "./img/arrow-right.png";
     rightArrow.classList.add('slider-right');
     rightArrow.addEventListener('click', () => {
       slideRight();
