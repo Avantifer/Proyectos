@@ -25,7 +25,7 @@ function toBlack() {
         iconmoon.remove();
 
         const iconsun = document.createElement('img');
-        iconsun.src = '../img/icon-sun.svg';
+        iconsun.src = './img/icon-sun.svg';
         iconsun.classList.add("icon-sun");
         top_side.appendChild(iconsun);
 
@@ -37,7 +37,7 @@ function toBlack() {
 
     function changebackground() {
         const image = document.querySelector('.background');
-        image.src = '../img/bg-desktop-dark.jpg';
+        image.src = './img/bg-desktop-dark.jpg';
     }
     
     changebackground();
@@ -61,7 +61,7 @@ function toWhite() {
         iconsun.remove();
 
         const iconmoon = document.createElement('img');
-        iconmoon.src = '../img/icon-moon.svg';
+        iconmoon.src = './img/icon-moon.svg';
         iconmoon.classList.add("icon-moon");
         top_side.appendChild(iconmoon);
 
@@ -73,7 +73,7 @@ function toWhite() {
 
     function changebackground() {
         const image = document.querySelector('.background');
-        image.src = '../img/bg-desktop-light.jpg';
+        image.src = './img/bg-desktop-light.jpg';
     }
     
     changebackground();
@@ -102,7 +102,7 @@ function add(e) {
         item.appendChild(element_input);
         
         const clear_icon = document.createElement('img');
-        clear_icon.src = '../img/icon-cross.svg';
+        clear_icon.src = './img/icon-cross.svg';
         clear_icon.classList.add('cross-icon');
         item.appendChild(clear_icon)
 
