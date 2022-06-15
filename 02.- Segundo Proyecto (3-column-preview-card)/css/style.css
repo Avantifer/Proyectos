@@ -1,3 +1,9 @@
+@media (max-width: 576px) {
+  .card {
+    max-height: none !important; }
+  .card-text {
+    height: auto !important; } }
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 402px !important; } }
@@ -12,7 +18,9 @@
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px !important; } }
+    max-width: 1140px !important; } 
+  .card-text {
+    height: 11.5rem !important; } }
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -27,6 +35,7 @@
 .card-text {
   font-family: "Lexend Deca", sans-serif !important;
   color: rgba(255, 255, 255, 0.75);
+  height: 12rem;
   font-size: 15px; }
 
 .card a {
@@ -3288,6 +3297,7 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   flex-direction: column;
+  max-height: 31rem;
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
